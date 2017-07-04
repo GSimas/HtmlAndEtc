@@ -1,3 +1,0 @@
-[0629/192215.285:ERROR:crash_report_database_win.cc(563)] CreateDirectory C:\Program Files (x86)\reports: Acesso negado. (0x5)
-[0629/192215.333:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
-[0629/192215.335:ERROR:crash_report_database_win.cc(563)] CreateDirectory C:\Program Files (x86)\reports: Acesso negado. (0x5)
