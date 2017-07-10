@@ -1,5 +1,7 @@
 # HTML and ETC
 
+> "Logo que, numa inovação, nos mostram alguma coisa de antigo, ficamos sossegados" - **Friedrich Nietzsche**
+
 Repositório teste para exemplos e projetos em HTML, Javascript e CSS (e PHP, por ventura), além de SASS, Jekyll, HAML, Flask, scripts com Python entre outras linguagens.
 Desenvolvido com [Microsoft Visual Studio Code](https://code.visualstudio.com).
 
