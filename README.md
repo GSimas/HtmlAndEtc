@@ -1,3 +1,22 @@
+# HTML and ETC
+
+Repositório teste para exemplos e projetos em HTML, Javascript e CSS (e PHP, por ventura), além de SASS, Jekyll, HAML, Flask, scripts com Python entre outras linguagens.
+Desenvolvido com [Microsoft Visual Studio Code](https://code.visualstudio.com).
+
+**Frameworks:**
+
+- [Bootstrap](http://getbootstrap.com/)
+- Style CSS
+- [Bulma](http://bulma.io/)
+- [Flexslider](https://woocommerce.com/flexslider/)
+- [Materialize CSS](http://materializecss.com/)
+
+Você pode acessar a página em progresso e testes neste link a seguir: [Página HtmlAndEtc](https://gsimas.github.io/HtmlAndEtc)
+
+![](http://www.planetsourcecode.com/vb/2010Redesign/images/LangugeHomePages/HTML5_CSS_JavaScript.png)
+
+## Previous README.md file was like that:
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/GSimas/HtmlAndEtc/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
