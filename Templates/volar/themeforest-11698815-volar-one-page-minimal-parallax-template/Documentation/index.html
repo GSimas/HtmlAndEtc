@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Volar - Documentation</title>
+    <meta name="author" content="summit themes">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div id="header" class="header">
+        <div class="project-name">
+            <div class="logo">
+                <svg version="1.1" id="logo" x="0px" y="0px" width="640px" height="320px" viewBox="0 0 640 320">
+                    <g>
+                        <path class="logo-svg-path-navbar" d="M254.163,190.984v-15.797l14.744-25.53c0.311-0.539,1.003-0.722,1.538-0.411l9.574,5.524
+        c0.537,0.311,0.723,1.005,0.413,1.538l-17.308,29.98C261.245,189.555,257.692,191.268,254.163,190.984L254.163,190.984
+        L254.163,190.984z M254.163,149.908l6.542-6.542c0.223-0.219,0.332-0.486,0.332-0.796c0-0.309-0.106-0.58-0.329-0.797l-6.545-6.546
+        V149.908z M222.886,68.404c4.443,0.763,7.842,4.647,7.842,9.303v2.737c0,0.311-0.111,0.583-0.33,0.8
+        c-0.22,0.216-0.487,0.328-0.796,0.328h-6.716V68.404L222.886,68.404L222.886,68.404z M254.163,135.226v14.682l-31.277,31.284
+        v-18.83l28.41-28.412c0.219-0.217,0.485-0.329,0.795-0.334c0.314,0,0.577,0.117,0.8,0.334L254.163,135.226L254.163,135.226
+        L254.163,135.226z M254.163,175.188l-6.728,11.658c-0.308,0.535-0.125,1.225,0.412,1.537l2.375,1.369
+        c1.246,0.723,2.595,1.125,3.94,1.236V175.188L254.163,175.188L254.163,175.188z M222.886,138.524l22.118-12.77
+        c0.54-0.312,0.726-1.006,0.415-1.542l-5.53-9.575c-0.312-0.536-1.004-0.722-1.538-0.413l-15.465,8.927V138.524L222.886,138.524
+        L222.886,138.524z M222.886,107.763V93.981l8.065-2.16c0.3-0.077,0.586-0.044,0.856,0.111c0.267,0.159,0.445,0.388,0.525,0.689
+        l2.863,10.682c0.08,0.298,0.043,0.589-0.114,0.853c-0.156,0.271-0.383,0.447-0.685,0.525L222.886,107.763L222.886,107.763z
+         M29.038,72.133V69.39c0-0.619,0.506-1.124,1.126-1.124h191.121c0.545,0,1.081,0.046,1.601,0.138v13.168H38.483
+        C33.283,81.572,29.038,77.331,29.038,72.133L29.038,72.133L29.038,72.133z M222.886,93.981v13.782l-105.524,28.271
+        c-5.022,1.346-10.218-1.652-11.565-6.677l-0.711-2.646c-0.082-0.297-0.044-0.585,0.111-0.858c0.157-0.266,0.387-0.438,0.686-0.522
+        L222.886,93.981L222.886,93.981z M222.886,123.155l-71.688,41.388c-0.534,0.311-0.72,1.002-0.409,1.539l1.367,2.377
+        c2.602,4.502,8.401,6.057,12.903,3.455l57.827-33.387V123.155L222.886,123.155z M222.886,162.361v18.83l-7.053,7.051
+        c-3.679,3.684-9.68,3.684-13.358,0l-1.941-1.939c-0.438-0.438-0.438-1.154,0-1.59L222.886,162.361L222.886,162.361z" />
+                        <path class="logo-svg-path-navbar" d="M447.068,155.821v-15.369l41.733,24.091c0.266,0.16,0.446,0.389,0.527,0.689
+        c0.078,0.299,0.042,0.588-0.111,0.855l-1.368,2.371c-2.605,4.502-8.401,6.061-12.904,3.457L447.068,155.821L447.068,155.821z
+         M447.068,115.79v-13.779l87.052,23.326c0.298,0.078,0.528,0.25,0.681,0.521c0.162,0.273,0.195,0.556,0.114,0.859l-0.711,2.646
+        c-1.349,5.025-6.541,8.023-11.563,6.677L447.068,115.79L447.068,115.79L447.068,115.79z M447.068,81.572V68.266h162.769
+        c0.622,0,1.125,0.505,1.125,1.124v2.743c0,5.203-4.242,9.442-9.442,9.442H447.068V81.572z M447.068,68.266v13.306h-24.789V68.266
+        H447.068L447.068,68.266z M447.068,102.011v13.779l-24.789-6.641V95.365L447.068,102.011L447.068,102.011z M447.068,140.449v15.369
+        l-24.789-14.309v-15.367L447.068,140.449L447.068,140.449z M422.282,186.359v-18.83l17.186,17.184
+        c0.216,0.221,0.327,0.486,0.327,0.797c0,0.309-0.109,0.578-0.327,0.793l-1.941,1.939c-3.679,3.684-9.675,3.684-13.358,0
+        L422.282,186.359L422.282,186.359z M389.777,189.752l2.374-1.369c0.539-0.311,0.726-1.002,0.416-1.537l-6.729-11.652v15.795
+        C387.185,190.877,388.53,190.469,389.777,189.752L389.777,189.752L389.777,189.752z M422.282,68.266v13.306H410.4
+        c-0.622,0-1.125-0.505-1.125-1.127v-2.737c0-5.203,4.239-9.441,9.442-9.441H422.282L422.282,68.266z M422.282,95.365v13.784
+        l-16.675-4.47c-0.6-0.159-0.958-0.781-0.796-1.381l2.859-10.676c0.081-0.304,0.258-0.533,0.527-0.689
+        c0.269-0.156,0.553-0.191,0.857-0.117L422.282,95.365L422.282,95.365z M422.282,126.143v15.367l-27.288-15.755
+        c-0.532-0.312-0.722-1.006-0.413-1.542l5.526-9.575c0.309-0.536,1.006-0.722,1.539-0.413L422.282,126.143L422.282,126.143
+        L422.282,126.143z M422.282,167.533v18.828l-36.444-36.448v-14.688l1.271-1.271c0.22-0.217,0.491-0.328,0.798-0.334
+        c0.31,0,0.577,0.117,0.799,0.334L422.282,167.533z M385.835,175.188l-14.745-25.53c-0.308-0.539-1.002-0.722-1.54-0.416
+        l-9.574,5.53c-0.536,0.311-0.72,1.005-0.415,1.538l17.313,29.98c1.882,3.262,5.433,4.977,8.958,4.693v-15.795H385.835z
+         M385.835,135.223v14.688l-6.544-6.545c-0.438-0.438-0.441-1.157-0.003-1.594L385.835,135.223L385.835,135.223z" />
+                        <path class="logo-svg-path-navbar" d="M320.852,17.279c5.857,42.344,5.539,64.56,5.539,114.385c0,0.619-0.505,1.125-1.127,1.125h-11.047
+        c-0.619,0-1.126-0.505-1.126-1.125c-0.003-49.848-0.323-72.039,5.534-114.385c0.075-0.561,0.547-0.968,1.113-0.974
+        C320.302,16.305,320.776,16.713,320.852,17.279L320.852,17.279z" />
+                        <path class="logo-svg-path-navbar" d="M320.86,302.674c5.866-66.078,5.53-59.584,5.53-137.598c0-0.311-0.111-0.58-0.328-0.799
+        c-0.222-0.223-0.488-0.334-0.799-0.334h-11.047c-0.31,0-0.576,0.117-0.799,0.334c-0.219,0.219-0.33,0.488-0.33,0.799
+        c0,78.041-0.34,71.512,5.526,137.598c0.053,0.576,0.533,1.016,1.116,1.021C320.313,303.699,320.811,303.26,320.86,302.674
+        L320.86,302.674z" />
+                    </g>
+                </svg>
+            </div>
+            <h1>Volar</h1>
+            <span>Documentation</span>
+        </div>
+        <nav>
+            <ul>
+                <li class="current"><a href="#start" class="ripple-alone"><i class="glyphicon glyphicon-chevron-right"></i> Start</a>
+                </li>
+                <li><a href="#installing" class="ripple-alone"><i class="glyphicon glyphicon-chevron-right"></i> Installing The Template</a>
+                </li>
+                <li><a href="#home-sect" class="ripple-alone"><i class="glyphicon glyphicon-chevron-right"></i> Home Versions</a>
+                </li>
+                <li><a href="#html-struc" class="ripple-alone"><i class="glyphicon glyphicon-chevron-right"></i> HTML Structure</a>
+                </li>
+                <li><a href="#css-struc" class="ripple-alone"><i class="glyphicon glyphicon-chevron-right"></i> CSS Structure</a>
+                </li>
+                <li><a href="#setup-contact" class="ripple-alone"><i class="glyphicon glyphicon-chevron-right"></i> Setup Contact Form</a>
+                </li>
+                <li><a href="#probable-issues" class="ripple-alone"><i class="glyphicon glyphicon-chevron-right"></i>probable issues</a>
+                </li>
+                <li><a href="#credits" class="ripple-alone"><i class="glyphicon glyphicon-chevron-right"></i> Credits</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="page-sections">
+        <div id="start">
+            <div class="title">
+                <h1><i class="glyphicon glyphicon-send"></i> Start</h1>
+            </div>
+            <ul>
+                <li><span class="highlight-color">Created:</span> 2015-07-15</li>
+                <li><span class="highlight-color">By:</span> Ershad Qaderi</li>
+                <li><span class="highlight-color">Mail:</span> ershad.ghaderi@gmial.com</li>
+            </ul>
+            <p>Thanks for purchasing Volar Template. If you have any question you can ask through comments. Also you can find a lot of useful information right there. Thank you so much!</p>
+            <p><span class="label label-warning">Quick Tip:</span> when you open a file press <span class="label label-info">Ctrl + F</span> to find what's need to be found!</p>
+        </div>
+        <hr/>
+        <div id="installing">
+            <div class="title">
+                <h1><i class="glyphicon glyphicon-download-alt"></i> Installing The Template</h1>
+            </div>
+            <div class="doc-item">
+                <h2>Setting the base color scheme</h2>
+                <ol>
+                    <li>Locate <span class="label label-success">css/theme</span> folder, you have all the colors in there.</li>
+                    <li>Choose your color.</li>
+                    <li>Open the html files.</li>
+                    <li>Go to Line 45 and replace the color name with your chosen color.</li>
+                </ol>
+                <pre>&lt;link href="css/theme/scuba-blue.css" rel="stylesheet" data-color="" id="theme"&gt;</pre>
+            </div>
+            <div class="doc-item">
+                <h2>Page Load Transitions</h2>
+                <p>Yo can specify the Page Load Transition:
+                </p>
+                <ol>
+                    <li>Open the html file.</li>
+                    <li>Find <pre>&lt;div id="page" class="animsition .." .. data-animsition-in="zoom-in" data-animsition-out="fade-out-up-sm" ..  &gt;</pre>
+                    </li>
+                    <li>Go here: <a href="http://goo.gl/wEF4R1">http://goo.gl/wEF4R1</a> see the demos and choose your own style! Now:
+                    </li>
+                    <li>To set the page loading transition when you enter, change the value of <pre>.. data-animsition-in=".." ..</pre>, and to set the page loading transition when you exit, change the value of <pre>.. data-animsition-out=".." ..</pre>
+                    </li>
+                </ol>
+            </div>
+            <div class="doc-item">
+                <h2>Page Loaders</h2>
+                <p>Yo can specify the Page Loaders text and loader type, to do so:
+                </p>
+                <ol>
+                    <li>Open the html file.</li>
+                    <li>Find <pre>&lt;div id="page" class="animsition .." .. data-loader-type="loader2" data-page-loader-text="Volar" ..  &gt; </pre>
+                    </li>
+                    <li>To change Loader type set <pre>.. data-loader-type=".." ..</pre> to <span class="label label-success">loader1</span>, <span class="label label-success">loader2</span> or <span class="label label-success">loader3</span>.</li>
+                    <li>To change Loader text simply change <span class="label label-success">Volar</span> in <pre>.. data-loader-text="Volar" ..</pre> into whatever you want!</li>
+                </ol>
+            </div>
+            <div class="doc-item">
+                <h2>Retina supprot <span class="label label-warning">optional</span></h2>
+                <p>Retina support includes <span class="label label-success">img</span>s and <span class="label label-success">background-image</span>s.
+                </p>
+                <p>If you want to support retina devices you have to:</p>
+                <ol>
+                    <li>Open the html file.</li>
+                    <li>Find <pre>&lt;div id="page" class="animsition .." .. &gt; </pre>
+                    </li>
+                    <li>Add <span class="label label-success">retina-support</span> class to it.</li>
+                    <li>For <span class="label label-success">img</span>s; place another image with the same name plus <span class="label label-success">@2x</span> at the end of the name inthe same directory, it must be 2x larger</li>
+                    <li>For <span class="label label-success">background-image</span>s; you need to specify 4 differet background images
+                        <ol>
+                            <li><span class="label label-success">your-image-name.jpg</span> with dimansions of: <span class="label label-success">1280px *1280px</span> for regular mobile devices.</li>
+                            <li><span class="label label-success">your-image-name@2x.jpg</span> with dimansions of: <span class="label label-success">2560px *2560px</span> for retina mobile devices.</li>
+                            <li><span class="label label-success">your-image-name@@lg.jpg</span> with dimansions of: <span class="label label-success">1440px *900px</span> for regular desktop devices.</li>
+                            <li><span class="label label-success">your-image-name@@lg2x.jpg</span> with dimansions of: <span class="label label-success">2880px *1800px</span> for retina desktop devices.</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+            <div class="doc-item">
+                <h2>Setting the Scroll Progress Bar <span class="label label-warning">optional</span></h2>
+                <p>The default state has the progress bar but if you want to remove it:
+                </p>
+                <ol>
+                    <li>Open the html file.</li>
+                    <li>Find <pre>&lt;nav id="nav" class="navbar .." .. &gt;</pre> </li>
+                    <li>The first child of the element above is this: <pre>&lt;div id="scroll-progressbar" class="scroll-progressbar"&gt;</pre>
+                    </li>
+                    <li>Delet it and the 4 lines below it.</li>
+                </ol>
+            </div>
+            <div class="doc-item">
+                <h2>Setting the Navbar type</h2>
+                <p>There are 4 types of Navbars, you have to choose one of them:</p>
+                <ol>
+                    <li>Fixed at top with Transparent background at the begining</li>
+                    <li>Sticky, visible and transparent background at the begining</li>
+                    <li>Sticky, not visible at the begining</li>
+                </ol>
+                <p>To do this:</p>
+                <ol>
+                    <li>Open the html file.</li>
+                    <li>Find this line: <pre>&lt;div id="nav-wrapper" class=".."&gt;</pre>
+                    </li>
+                    <li>This: <pre>&lt;nav id="nav" class="navbar .." .. &gt;</pre> is its first child of the element above.
+                    </li>
+                    <li>For Fixed at top with Transparent Navbar: Remove any classes from: <pre>&lt;div id="nav-wrapper" class=".."&gt;</pre> and add add <span class="label label-success">transp-nav</span> class to it, Then add <span class="label label-success">navbar-transparent navbar-fixed-top</span> classes to: <pre>&lt;nav id="nav" class="navbar ..".. &gt;</pre>.</li>
+                    <li>For Sticky, visible and transparent Navbar: Remove any classes from: <pre>&lt;div id="nav-wrapper" class=""&gt;</pre> and add add <span class="label label-success">transp-nav sticky-navbar sticky-visible</span> classes to it, Then remove <span class="label label-danger">navbar-fixed-top</span> class from: <pre>&lt;nav id="nav" class="navbar .." .. &gt;</pre> if it has it and add <span class="label label-success">navbar-transparent</span> class to it.</li>
+                    <li>For Sticky, not visible at the begining navbar: Remove any classes from: <pre>&lt;div id="nav-wrapper" class=".."&gt;</pre> and add add <span class="label label-success">sticky-navbar</span> class to it, Then remove any of <span class="label label-danger">navbar-transparent</span>, <span class="label label-danger">navbar-fixed-top</span> from: <pre>&lt;nav id="nav" class="navbar .." .. &gt;</pre> if it has them, yor're done.</li>
+                    <li><strong class="uppercase">important: </strong>for both types of sticky navbars you need to do this step as well: head over to <span class="label label-info">styles.css</span> go to l<span class="label label-success">line: 1277</span>, The difference between padding-top and padding-bottom of .sticky-nav-here element and marging-top of .sticky-visible-here must be the height of the .navbar in normal state -not transarent-.</li>
+                </ol>
+            </div>
+            <div class="doc-item">
+                <h2>Setting the Navbar logo</h2>
+                <ol>
+                    <li>you can choose a logo with any height, the Navbar won't breake. but you better not using a logo with a height more than 40px. 30px is even better. NOW:</li>
+                    <li>Open <span class="label label-info">styles.css</span>
+                    </li>
+                    <li>Go to <span class="label label-success">line: 1571</span> and change <span class="label label-success">line-height</span> it must be same as the height of your logo. so if your logo dimansions are say: 200px*100px; the line-height has to be 100px, line-height: 100px.</li>
+                </ol>
+            </div>
+            <div class="doc-item">
+                <h2>Setting the Navbar color scheme</h2>
+                <p>There are 2 overall color scheme for Navbars, you have to choose one of them:</p>
+                <ol>
+                    <li>Default Navbar - which is white!</li>
+                    <li>Dark Navbar</li>
+                </ol>
+                <p>To do this:</p>
+                <ol>
+                    <li>Open the html file.</li>
+                    <li>Find <pre>&lt;nav id="nav" class="navbar .." .. &gt;</pre>
+                    </li>
+                    <li>For Default Navbar remove <span class="label label-danger">navbar-dark</span> class and add <span class="label label-success">navbar-default</span> class to it.</li>
+                    <li>For Dark Navbar remove <span class="label label-danger">navbar-default</span> class and add <span class="label label-success">navbar-dark</span> class to it.</li>
+                </ol>
+            </div>
+            <div class="doc-item">
+                <h2>Setting the Background Overlay scheme</h2>
+                <p>There are 2 major overlay color scheme for sections with image background, you have to choose one of them:</p>
+                <ol>
+                    <li>Default State with no Class - which is Dark!</li>
+                    <li>Light Overlay</li>
+                </ol>
+                <p>To do this:</p>
+                <ol>
+                    <li>Open the html file.</li>
+                    <li>Find <pre>&lt;div id="page" class=".." .. &gt;</pre>
+                    </li>
+                    <li>For Default State remove <span class="label label-danger">light</span> class from it.</li>
+                    <li>For Light Overlay add <span class="label label-success">light</span> class to it.</li>
+                </ol>
+                <p>There is another class that you can add to the element; it is:</p>
+                <ol>
+                    <li><span class="label label-success">equal</span> class. By default Home Section Overlay is more transparent in compare with other sections this class makes Home Section Overlay like other Sections.</li>
+                </ol>
+            </div>
+            <div class="doc-item">
+                <h2>Setting the Team Section layout</h2>
+                <p>We have 2 possible styles fo Team Section layout:</p>
+                <ol>
+                    <li>Three members visible </li>
+                    <li>Two members visible</li>
+                </ol>
+                <p>here is what you need to do to acivate each one of them:</p>
+                <ol>
+                    <li>Open the html file.</li>
+                    <li>Find this: <pre>&lt;div id=" .. " class="team-carousel owl-carousel carousel dots-under"&gt;</pre>
+                    </li>
+                    <li>to have Three members visible set the <b>id</b> to <span class="label label-success">team-carousel-3</span></li>
+                    <li>to have Two members visible set the <b>id</b> to <span class="label label-success">team-carousel</span></li>
+                </ol>
+            </div>
+            <div class="doc-item">
+                <h2>Setting the Portfolio Section</h2>
+                <p>We have two major layout styles for this Section and 3 set of two-state options for the layout of each one of them an 2 color options for each</p>
+                <p>The step to be followed are boring and complicated, you can find all possible options in the demo pages, so I just point you there, so tha you van get what you want.</p>
+                <ol>
+                    <li>
+                        masonery
+                        <ul>
+                            <li></li>
+                            <li>full-width: <span class="label label-info">index02.html</span></li>
+                            <li>real-gapped: <span class="label label-info">index01.html</span></li>
+                            <li>gapped: <span class="label label-info">index04.html</span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        fixed dimension
+                        <ul>
+                            <li></li>
+                            <li>full-width: <span class="label label-info">index08.html</span></li>
+                            <li>real-gapped: <span class="label label-info">index05.html</span></li>
+                            <li>gapped: <span class="label label-info">index0.html</span></li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>There are to options fo the hover state color:</p>
+                <ol>
+                    <li>white mask</li>
+                    <li>colored mask</li>
+                </ol>
+                <p>White mask is the default state, if you want the colored mask style:</p>
+                <ol>
+                    <li>Open the html file.</li>
+                    <li>Find: <pre>&lt;div id="portfolio-container" class="portfolio-container .. "&gt;&lt;/div&gt;</pre>
+                    </li>
+                    </li>
+                    <li>add <span class="label label-success">colored-mask</span> class to it</li>
+                </ol>
+            </div>
+            <div class="doc-item">
+                <h2>Google Maps</h2>
+                <p>to set the address:</p>
+                <ol>
+                    <li>Open the html file.</li>
+                    <li>Find: <pre>&lt;div id="map-canvas" data-address=" .. "&gt;&lt;/div&gt;</pre>
+                    </li>
+                    <li>Type your Address inside <pre>.. data-address=".." ..</pre>, use <a href="http://maps.google.com">Google Maps</a> to find your address.
+                    </li>
+                </ol>
+            </div>
+            <div class="doc-item">
+                <h2>Footer Style</h2>
+                <p>There are two option:</p>
+                <ol>
+                    <li>Default Footer - which is dark</li>
+                    <li>Light Footer</li>
+                </ol>
+                <p>Steps:</p>
+                <ol>
+                    <li>Open the html file.</li>
+                    <li>Find: <pre>&lt;footer class="footer-section section no-padding-bottom"&gt;</pre>
+                    </li>
+                    <li>Default Footer: let it be like above.</li>
+                    <li>Light Footer: add <span class="label label-danger">light-footer</span> class to it.</li>
+                </ol>
+            </div>
+            <p>
+                <h2>Getting the Template Online</h2>
+                <ol>
+                    <li>It's important to understand that you must either have your own server space or use someone elses. The server space can be purchased at many different places around the internet. You need somewhere to put the files that you purchased so others can find them online.</li>
+                    <li>The template folder will have several files with the extension labeled .html. This is where all your content will. It's very important to keep the css and js-plugin folders with the HTML or the HTML will not look how the design is meant to look. Along with the HTML files, you will also have four additional folders to upload: css, js, fonts, and images.</li>
+                    <li>Start your FTP client (I persoanlly use <a href="http://filezilla-project.org/">Filezila</a> which is free) and login. Login to your server. You will need your server name (often times this will be your domain name), username, and password that you setup with the hosting company.</li>
+                </ol>
+            </p>
+        </div>
+        <hr/>
+        <div id="home-sect">
+            <div class="title">
+                <h1><i class="glyphicon glyphicon-list-alt"></i> Home section</h1>
+            </div>
+            <h3>We figured that some versions of Home Section may need a little more explanation</a>
+            </h3>
+            <div class="doc-item">
+                <h2>fss - <a href="https://github.com/wagerfield/flat-surface-shader">Flat Surface Shader</a>:</h2>
+                <p>We created two home page versions based on this cool library, they are <span class="label label-info">index02.hrml</span> and <span class="label label-info">index05.html</span> </p>
+                <p>The <span class="label label-info">index02.hrml</span> is actually transparent with a red background but <span class="label label-info">index05.html</span> is colored. to change its color: </p>
+                <ol>
+                    <li>Open <span class="label label-info">fssinit.solid.js</span>
+                    </li>
+                    <li>Go to <span class="label label-success">line: 32</span> and change <span class="label label-success">diffuse</span> value into your desired color</li>
+                </ol>
+                <p>You can change other options too, if you want to be more professional go <a href="http://matthew.wagerfield.com/flat-surface-shader/">here</a> and use it as your guide.</p>
+            </div>
+            <div class="doc-item">
+                <h2>Particles: <a href="https://github.com/VincentGarreau/particles.js/">particles.js</a> and <a href="https://github.com/jnicol/particleground">Particleground</a></h2>
+                <ol>
+                    <li><span class="label label-info">Particleground</span> demo is <span class="label label-info">index03.html</span>, you can find its settings in <span class="label label-info">js/scripts.js</span> file at <span class="label label-success">line: 137</span>
+                    </li>
+                    <li>We have <span class="label label-info">particles.js</span> in <span class="label label-info">index04.html</span> , you can find its settings in <span class="label label-info">js/scripts.js</span> file at <span class="label label-success">line: 970</span> to be a pro go <a href="http://vincentgarreau.com/particles.js/">here</a>!</li>
+                </ol>
+            </div>
+            <div class="doc-item">
+                <h2>Animate Slider</h2>
+                <p>We have <span class="label label-info">AnimateSlider</span> as Home Section slider in <span class="label label-info">index10.html</span> and <span class="label label-info">index11.html</span> .</p>
+                <p>We have three option:</p>
+                <ol>
+                    <li>Show indicators [dots] like a regular slider</li>
+                    <li>Indicators that are progress bar meanwhile!</li>
+                </ol>
+                <p>Here is what you need to do in order to activate each one of these options:</p>
+                <ol>
+                    <li>Open the html file.</li>
+                    <li>Find: <pre>&lt;div id="animate-slider" class="animate-slider .." .. &gt;</pre>
+                    </li>
+                    <li>Regular indicators: remove <span class="label label-danger">alltogether-loadbars</span> class if it has it then add <span class="label label-success">show-indicators</span> class.</li>
+                    <li>The 2nd option - the cool one: remove <span class="label label-danger">show-indicators</span> class if it has it then add <span class="label label-success">alltogether-loadbars</span> class.</li>
+                </ol>
+                <p>If you do not want the navigation, find:<pre>&lt;div class="as-nav-arrows"&gt;</pre> and delete or comment it!!</p>
+                <p>Be aware that you have to specify the location of slide background images if you want each slide to have its own background image. to do so set the url of your images in this element: <pre>&lt;div id="animate-slider" class="animate-slider .." data-background-0=".." data-background-1=".." data-background-2=".." .. &gt;</pre>
+                </p>
+                <p> you have to make sure that there are as many <pre>data-background-</pre>s as slides.</p>
+                <p>Now lets get down to animations: inside each slide yo can set indivisual initation animation for each element. follow the steps below:</p>
+                <ol>
+                    <li>Open the html file.</li>
+                    <li>Find these elements: <pre>&lt;div class="slide .."&gt;</pre> inside them there are elements like: <pre>&lt;div data-effect-in=".." data-effect-out=".."&gt;</pre> change <span class="label label-success">data-effect-in=".."</span> and <span class="label label-success">data-effect-out=".."</span> to whatever you like
+                    </li>
+                    <li>We are using <a href="http://daneden.github.io/animate.css/">Animate.css</a> and <a href="http://www.minimamente.com/example/magic_animations/">magic</a>, use them to choose your desired in and out animation for each element.</li>
+                </ol>
+            </div>
+            <div class="doc-item">
+                <h2>Video Background</h2>
+                <p>You can find this in <span class="label label-info">index04.html</span>, <span class="label label-info">index07.html</span>, <span class="label label-info">index08.html</span> and <span class="label label-info">index12.html</span>.
+                </p>
+                <p>To change the video:</p>
+                <ol>
+                    <li>You must create 3 formats for your video: <span class="label label-info">video.mp4</span>, <span class="label label-info">video.webm</span> and <span class="label label-info">video.ogv</span>
+                        <br /> You also have to put a image beside the videos with the same name. it should be one of these formats: <span class="label label-info">.jpg</span>, <span class="label label-info">.png</span> or <span class="label label-info">.gif</span> then:</li>
+                    <li>Open the html file.</li>
+                    <li>Find: <pre>&lt; div class="video-background .." data-vide-bg="mp4: video/seagull, webm: video/seagull, ogv: video/seagull, poster: video/seagull" data-vide-options="position: 50% 50%" &gt; .. &lt;/div&gt;</pre>
+                    </li>
+                    <li>Here the name of video is <span class="label label-success">seagull</span> ! change it into the name of your video
+                    </li>
+                </ol>
+            </div>
+            <div class="doc-item">
+                <h2>Youtube background video</h2>
+                <p>You can find this in <span class="label label-info">index16.html</span>
+                </p>
+                <p>To change the video:</p>
+                <ol>
+                    <li>Open the html file.</li>
+                    <li>Find: <pre>&lt;a id="video" class="player" data-property="{videoURL:'B-h6egUzFEg', .."&gt;</pre>
+                    </li>
+                    <li>Change <span class="label label-success">videoURL:'..'</span>
+                    </li>
+                    <li>Example: this is a Youtube video url: <span class="label label-info">www.youtube.com/watch?v=j_ZBnqssTWc</span> we only nee the part that is after <span class="label label-info">v=</span> which is <span class="label label-info">j_ZBnqssTWc</span>. </li>
+                </ol>
+            </div>
+            <div class="doc-item">
+                <h2>Animated Headlines</h2>
+                <p>You can find this in <span class="label label-info">index16.html</span>. open it. choose your favorite one. copy the code. paste it where you want!
+                </p>
+                <p>To choose your deired aniamted headline:</p>
+            </div>
+        </div>
+        <hr/>
+        <div id="html-struc">
+            <div class="title">
+                <h1><i class="glyphicon glyphicon-list-alt"></i> HTML Structure</h1>
+            </div>
+            <p>This theme is a responsive layout based on <a href="http://getbootstrap.com/">Bootstrap 3</a>.
+            </p>
+            <h2>Grid System</h2>
+            <p>Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts. <span class="label label-success">Examples:</span>
+            </p>
+            <div class="row show-grid">
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+            </div>
+            <div class="row show-grid">
+                <div class="col-md-8">.col-md-8</div>
+                <div class="col-md-4">.col-md-4</div>
+            </div>
+            <div class="row show-grid">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+            </div>
+            <div class="row show-grid" style="margin-bottom:20px;">
+                <div class="col-md-3">.col-md-3</div>
+                <div class="col-md-3">.col-md-3</div>
+                <div class="col-md-3">.col-md-3</div>
+                <div class="col-md-3">.col-md-3</div>
+            </div>
+            <div class="alert alert-info"><strong>Shortcodes!</strong> Feel free to use the custom elements in shortcodes, or use the general Bootstrap elements.</div>
+            <div class="alert alert-info"><strong>Icons!</strong> You have lots of Font Icons, there is <a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome</a> and a set of custom icons that you can find in <span class="label label-info">fonts</span> folder. You can uses with Icons, buttons, .. Just copy icon name and paste.</div>
+        </div>
+        <hr/>
+        <div id="css-struc">
+            <div class="title">
+                <h1><i class="glyphicon glyphicon-list-alt"></i> CSS Structure</h1>
+            </div>
+            <p>We're using two main CSS files ( <span class="label label-success">style.css</span> and <span class="label label-success">theme.css</span> css file ) we do not recommend making changes to <span class="label label-success">style.css</span>. There is also <span class="label label-warning">theme.less</span> file that you can use to create your own theme color css file.</p>
+            <br/>
+            <p>Finished color scheme template in the /css/themes/ directory:</p>
+            <ol>
+                <li><strong>black-white.css</strong>
+                </li>
+                <li><strong>dark-blue.css</strong>
+                </li>
+                <li><strong>gold.css</strong>
+                </li>
+                <li><strong>light-green.css</strong>
+                </li>
+                <li><strong>light-purple.css</strong>
+                </li>
+                <li><strong>olive.css</strong>
+                </li>
+                <li><strong>orange.css</strong>
+                </li>
+                <li><strong>purple.css</strong>
+                </li>
+                <li><strong>red.css</strong>
+                </li>
+                <li><strong>scuba-blue.css</strong>
+                </li>
+            </ol>
+        </div>
+        <hr/>
+        <div id="probable-issues">
+            <div class="title">
+                <h1><i class="glyphicon glyphicon-alert"></i> Probable Issues</h1>
+            </div>
+            <p>IF you came across an issue like unwanted gap or collapsing between filter buttons in Firefox THEN add ONE OF these styles to the end of <span class="label label-success">style.css</span> one of them should work for you. Otherwise you don' ned to do anything.</p>
+            <ol>
+                <li>Open the styles.css file.</li>
+                <li>Go to end of it</li>
+                <li>Copy ONE of styles below and paste it there</li>
+            </ol>
+            <p>This:</p>
+            <pre>@media screen and (min-width: 768px) {
+    .portfolio-filters .btn::before,
+    .portfolio-filters .btn::after {
+        height: 49%;
+    }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .portfolio-filters .btn::before,
+    .portfolio-filters .btn::after {
+        height: 50%;
+    }
+}</pre>
+            <p>Or this:</p>
+
+            <pre>.portfolio-filters .btn::before,
+.portfolio-filters .btn::after {
+    height: 49%;
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio-filters .btn::before,
+    .portfolio-filters .btn::after {
+        height: 50%;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .portfolio-filters .btn::before,
+    .portfolio-filters .btn::after {
+        height: 50%;
+    }
+}</pre>
+        </div>
+        <hr/>
+        <div id="setup-contact">
+            <div class="title">
+                <h1><i class="glyphicon glyphicon-envelope"></i> Setup Contact Form</h1>
+            </div>
+            <ol>
+                <li>Open the mailer.php file.</li>
+                <li>Go to Line 24, and replace with your E-mail.</li>
+            </ol>
+            <pre>$recipient = "mail@domain.com";</pre>
+            <p></p>
+        </div>
+        <hr/>
+        <div id="credits">
+            <div class="title">
+                <h1><i class="glyphicon glyphicon-heart"></i> Credits</h1>
+            </div>
+            <p>I would like to thank all the ausome people who created these cool stuffs:</p>
+            <ul>
+                <li><strong>Bootstrap</strong> - Copyright 2011-2014 Twitter, Inc.</li>
+                <li><strong>jquery-2.1.1.js</strong> - 2005, 2014 jQuery Foundation, Inc.</li>
+                <li><strong>jquery.easing.1.3.js</strong> - Copyright © 2008 George McGinley Smith</li>
+                <li><strong>jquery.animsition.js</strong> - http://blivesta.github.io/animsition/</li>
+                <li><strong>smoothscroll.js</strong> - SmoothScroll for websites v1.2.1</li>
+                <li><strong>skrollr.js</strong> - skrollr 0.6.29 (2014-11-17) | Alexander Prinzhorn</li>
+                <li><strong>wow.js</strong> - Copyright (c) 2014 Matthieu Aussaguel; Licensed MIT</li>
+                <li><strong>waypoints.js</strong> - Copyright (c) 2011-2014 Caleb Troughton</li>
+                <li><strong>jquery.counterup.js</strong> - Copyright 2013, Benjamin Intal</li>
+                <li><strong>jquery.mb.YTPlayer.js</strong> - Copyright (c) 2001-2014. Matteo Bicocchi (Pupunzi)</li>
+                <li><strong>jquery.particleground.js</strong> - author Jonathan Nicol - @mrjnicol</li>
+                <li><strong>fss.js</strong> - Copyright (C) 2013 Matthew Wagerfield</li>
+                <li><strong>retina.js</strong> - Copyright 2014 Imulus, LLC</li>
+                <li><strong>modernizrr.js</strong> - Copyright © MIT & BSD.</li>
+                <li><strong>jquery.isotope.js</strong> - Copyright © 2013 Metafizzy.</li>
+                <li><strong>nivo-lightbox.js</strong> - Copyright 2013, Dev7studios.</li>
+                <li><strong>owl.carousel.js</strong> - Copyright © 2015 Bartosz Wojciechowski.</li>
+            </ul>
+            <br/>
+            <br/>
+        </div>
+    </div>
+    <div class="copyright">Copyright <a href="#.">© Summit Themes</a> 2015</div>
+    <script src="assets/js/jquery-2.1.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.easing.1.3.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

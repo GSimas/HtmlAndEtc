@@ -1,0 +1,82 @@
+@CHARSET "ISO-8859-1";
+
+
+.etabs {
+    margin: 10px 0 0;
+}
+.etabs li.tab {
+    display: inline-block;
+    margin: 0;
+}
+.etabs li.tab a {
+    background-color: #fff;
+    border-color: #ddd;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    color: #868686;
+    display: block;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    outline: medium none;
+    padding: 0 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+}
+.etabs li.tab a i{
+    margin-right: 5px;
+}
+.etabs li.active a {
+    background-color: #fff;
+    border-color: #ddd;
+    border-style: solid;
+    border-width: 0 1px;
+    box-shadow: 0 3px 0 #70c6ec inset;
+    margin-bottom: 0;
+}
+.etabs li.active a::before {
+    background: #fff none repeat scroll 0 0;
+    bottom: -1px;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.panel-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+.wpb_el_type_cms_template_img img.cms-img-select {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    width: 44.2%;
+}
+.wpb_el_type_cms_template_img img.cms-img-select:hover {
+    cursor: pointer;
+}
+.wpb_el_type_cms_template_img img.selected, .wpb_el_type_cms_template_img img.cms-img-select:hover {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.zo_metabox_field{
+    margin-bottom: 15px;
+}
+.zo_metabox_field label{
+    text-transform: none !important;
+    color: #222222 !important;
+}
+.zo_metabox_field .field-desc{
+    color: #868686;
+    margin: 0;
+}
+.zo_metabox_field .image-field img{
+    width: 100%;
+}
+.zo_metabox_note{
+    color: coral;
+    margin-bottom: 20px;
+    font-size: 16px;
+}

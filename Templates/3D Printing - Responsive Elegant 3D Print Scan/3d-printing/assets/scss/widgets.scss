@@ -1,0 +1,799 @@
+/*------------------------------------------------------------------
+[All Style Sidebar Widget]
+
+    1. Widget Search
+	2. Widget Category
+	3. Widget Tags
+
+-------------------------------------------------------------------*/
+/* ==========================================================================
+   [Start] 1. Widget Search
+========================================================================== */
+.searchform,
+.woocommerce-product-search {
+    position: relative;
+    margin-bottom: 15px;
+    &:before {
+        font-size: 18px;
+        position: absolute;
+        right: 32px;
+        line-height: 60px;
+        top: 0px;
+        content: "\f002";
+        font-family: FontAwesome;
+    }
+    .screen-reader-text {
+        display: none;
+    }
+    div {
+        border: 10px solid #f2f2f2;
+    }
+    input[type="text"],
+    input[name="s"]{
+        width: 100%;
+        margin: 0;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+        @include border-radius(0);
+        box-sizing: border-box;
+        font-style: italic;
+        @extend .font-second;
+        padding: 0 15px;
+    }
+    input[type="submit"] {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        width: 35px;
+        height: 40px;
+        line-height: 40px;
+        background: none;
+        border: none !important;
+        text-indent: -99999px;
+        opacity: 0;
+        padding: 0;
+
+    }
+}
+/* ==========================================================================
+   [Start] 2. Widget Search
+========================================================================== */
+
+/* ==========================================================================
+   [Start] 3. Widget Tags
+========================================================================== */
+.tagcloud a {
+    line-height: 30px;
+    font-size: 16px !important;
+    height: 34px;
+    padding: 0 18px;
+    margin: 10px 10px 0px 0;
+    display: inline-block;
+    @include border-radius(0);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    &:hover {
+        border-color: $primary_color;
+        background-color: $primary_color;
+        color: #ffffff;
+    }
+}
+/* ==========================================================================
+   [End] 3. Widget Tags
+========================================================================== */
+
+/* ==========================================================================
+   [Start] 4. Instagram
+========================================================================== */
+.secondary .zo-instagram-pics  {
+    padding: 0 7px;
+    margin-top: 15px;
+}
+.zo-instagram-pics {
+    padding-top: 10px;
+    .instagram-item {
+        margin: 0 0 10px;
+        padding: 0 10px 0 0;
+        a {
+            display: block;
+            position: relative;
+            &:before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                @include background-opacity(#fff,0.8);
+                opacity: 0;
+                @include transition(all 200ms ease-in-out);
+            }
+            img.hover-icon {
+                position: absolute;
+                top: calc(50% - 4px);
+                left: calc(50% - 14px);
+                opacity: 0;
+            }
+
+            &:hover {
+                &:before{
+                    opacity: 1;
+                }
+                img.hover-icon {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.zo-get-touch li {
+	position: relative;
+	padding-left: 30px;
+	i {
+		font-size: 20px;
+		color: #808080;
+		padding-right: 10px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+/* ==========================================================================
+   [End] 4. Instagram
+========================================================================== */
+
+
+/* ==========================================================================
+   [Start] 5. Zo Recent Post
+========================================================================== */
+
+.zo-recent-post {
+    margin-top: 40px;
+    .zo-recent-post-wrapper {
+        margin-left: 0;
+        > li {
+            margin: 0 0 40px;
+            clear: both;
+            line-height: normal;
+            &:last-child {
+                margin: 0;
+            }
+        }
+        .zo-recent-media {
+            width: 70px;
+            max-width: 70px;
+            float: left;
+        }
+        .zo-recent-details {
+            padding-left: 100px;
+            font-size: 14px;
+            &.no-image {
+                padding: 0;
+            }
+            .title {
+                font-size: 16px;
+                margin: 0 0 10px;
+                color: #141414;
+                font-weight: normal;
+                letter-spacing: 0;
+                line-height: normal;
+                a {
+                    color: #141414;
+                }
+            }
+            .date {
+                display: inline-block;
+                .author {
+                    padding-left: 1px;
+                    &:before {
+                        content: "|";
+                        padding-right: 3px;
+                    }
+                }
+            }
+
+            .post-categories {
+                margin: 0;
+                li {
+                    line-height: normal;
+                    a {
+                        @extend .font-second;
+                        font-style: italic;
+                        font-size: 16px;
+                        color: #6f6f6f;
+                    }
+                }
+            }
+
+        }
+    }
+}
+#secondary .zo-recent-post-wrapper {
+	.zo-recent-details .date {
+		color: $primary_color;
+	}
+}
+
+/**
+* Calendar Widget
+*/
+.widget_calendar table {
+	width: 100%;
+    caption {
+        text-align: center;
+        font-weight: bold;
+		text-transform: uppercase;
+    }
+	td {
+		text-align: center;
+	}
+}
+
+/**
+* Products Rate
+*/
+.widget_top_rated_products {
+    .product_list_widget {
+        li {
+            overflow: hidden;
+            margin-bottom: 30px !important;
+            a {
+                img {
+                    float: left;
+                    width: 70px;
+                    height: 75px;
+                    margin-right: 30px;
+                }
+                .product-title {
+                    float: left;
+                    color: #141414;
+                    font-size: 12px;
+                    width: calc(100% - 105px);
+                    line-height: normal;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                    font-weight: normal;
+					word-wrap: break-word;
+                }
+            }
+            .amount {
+                @extend .font-second;
+                font-size: 18px;
+                font-style: italic;
+                letter-spacing: 0.1em;
+                color: #141414;
+            }
+			ins{
+				text-decoration: none;
+			}
+        }
+    }
+}
+
+/**
+* Filter
+*/
+.widget_price_filter .price_slider_wrapper {
+    position: relative;
+    padding-top: 30px;
+    .price_slider {
+        background-color: #909090!important;
+        @include border-radius(0!important);
+        .ui-slider-handle {
+            width: 20px;
+            height: 20px;
+            top: -7px;
+            left: -10px;
+            background-color: $primary_color;
+        }
+        .ui-slider-range {
+            background-color: #141414;
+        }
+    }
+    .price_slider_amount {
+        .price_label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 13px;
+            color: #6f6f6f;
+        }
+        .button {
+            margin-top: 55px;
+            @include border-radius(0);
+            border: 2px solid #e4e4e4;
+            padding: 10px 25px;
+        }
+    }
+}
+
+
+/**
+* News Tabs
+*/
+.widget_ww_news_tabs {
+    .tab-holder .tab-hold {
+        .nav-tabs {
+            overflow: hidden;
+            border-left: 1px solid #ECECEC;
+            border-right: 1px solid #ECECEC;
+            li {
+                background-color: #f2f2f2;
+                border: none;
+                border-top: 2px solid transparent;
+                display: block;
+                float: left;
+                width: 50%;
+                text-align: center;
+                letter-spacing: 0.1em;
+                font-size: 12px;
+                a {
+                    display: block;
+                    border: none!important;
+                }
+                &.active {
+                    background-color: transparent;
+                    border-top-color: $primary_color;
+                }
+            }
+        }
+    }
+    .tab-content {
+        margin: 0;
+        border-width: 0 1px 1px 1px;
+        .tab-pane {
+            padding: 40px 20px 0;
+			@include breakpoint-in(768px,992px){
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+        }
+        .news-list {
+            margin: 0;
+            li {
+                width: 100%;
+                clear: both;
+                overflow: hidden;
+                margin-bottom: 40px;
+                .zo-image {
+                    width: 70px;
+                    height: 70px;
+                    float: left;
+                    + .zo-details {
+                        padding-left: 100px;
+                    }
+                }
+                .zo-details {
+                    line-height: normal;
+                    h4 {
+                        font-size: 16px;
+                        line-height: normal;
+                        font-weight: 400;
+                        letter-spacing: 0;
+                        margin: 0 0 5px;
+                        padding: 0;
+                    }
+                    a {
+                        @extend .font-second;
+                        font-style: italic;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+* Recent Comments
+*/
+.widget_recent_comments{
+	.recentcomments{
+		color: #c8c8c8;
+	}
+}
+/**
+* Rss Widget
+*/
+.widget_rss{
+    ul li {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid $primary_color;
+    }
+	.rssSummary{
+		line-height: 30px;
+	}
+}
+#primary .widget_nav_menu {
+    .menu-menu-service-container,
+    .menu-menu-product-container,
+    .menu-about-menu-container {
+        ul {
+            margin: 0 0 30px 0;
+            padding-left: 0;
+            li {
+                background: #f2f2f2;
+                line-height: 22px;
+                margin-bottom: 2px;
+                display: block;
+
+                a {
+                    color: #333;
+                    font-size: 17px;
+                    line-height: 22px;
+                    letter-spacing: 0;
+                    display: inline-block;
+                    padding: 21px 0px 21px 24px;
+                }
+                &:hover,
+                &.current-menu-item {
+                    background: $primary_color;
+                    color: #fff;
+                    a {
+                        color: #fff;
+                    }
+
+                    &:after {
+                        color: #fff;
+                    }
+                }
+                &:after {
+                    font-family: FontAwesome;
+                    content: "\f105";
+                    float: right;
+                    padding-right: 24px;
+                    color: #333;
+                    font-size: 20px;
+                    line-height: 22px;
+                    padding-top: 19px;
+                }
+            }
+        }
+    }
+}
+/*Widget Recent-Posts Thumb*/
+.widget_zo-recent-posts-widget-with-thumbnails{
+    ul{
+        padding: 0px;
+        background: transparent;
+
+        li {
+            margin-bottom: 0px;
+            padding: 10px 0;
+            background: #f2f2f2;
+            border-bottom: 2px solid #ffffff;
+            display: flex;
+            &:hover {
+                background: #f2f2f2;
+            }
+            .recent-thumb {
+                margin-right: 10px;
+                position: relative;
+                max-height: 80px;
+                float: left;
+                img {
+                    min-width: 80px;
+                }
+                .recent-thumb-overlay {
+                    @include  background-opacity(#f2f2f2,0.8);
+                    position: absolute;
+                    width: calc(100% - 10px);
+                    height: calc(100% - 10px);
+                    top: 5px;
+                    left: 5px;
+                    opacity: 0;
+                    &:before {
+                        content: '';
+                        background:url(../images/icon-link.png) no-repeat;
+                        position: absolute;
+                        width: calc(100% - 10px);
+                        height: calc(100% - 10px);
+                        top: 45%;
+                        left: 33%;
+                        opacity: 0;
+                    }
+                }
+                &:hover {
+
+                    .recent-thumb-overlay {
+                        opacity: 1;
+                        @include transition(all 300ms ease-in-out);
+                        &:before {
+                            opacity: 1;
+                        }
+                    }
+
+                }
+            }
+            .recent-detail {
+                .zo-post-title {
+                    line-height: 26px;
+                }
+                .zo-post-date {
+                    line-height: 26px;
+                }
+            }
+            @include breakpoint-in(768px, 992px){
+                display: inline-block;
+                width: 100%;
+                .recent-thumb  {
+                    max-width: 80px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+/*Widget Shop sidebar*/
+.widget_product_categories {
+    ul {
+        padding-top: 0px;
+        margin: 0 0 30px 0;
+        padding-left: 0;
+        padding-right: 0px;
+        background: transparent;
+        li {
+            border-bottom: 1px solid #fff;
+            background: #f2f2f2;
+            line-height: 22px;
+            margin-bottom: 2px;
+            position: relative;
+            display: block;
+            padding: 0;
+            a {
+                color: #333333;
+                font-size: 20px;
+                line-height: 22px;
+                letter-spacing: 0;
+                display: inline-block;
+                padding: 21px 0px 21px 24px;
+            }
+            &:hover,
+            &.current-cat {
+                background: $primary_color;
+                @include transition(all 200ms ease-in-out);
+                color: #fff;
+                a {
+                    color: #fff;
+                }
+
+                &:after {
+                    color: #fff;
+                }
+            }
+            &:after {
+                font-family: FontAwesome;
+                content: "\f105";
+                right:0;
+                position: absolute;
+                padding-right: 24px;
+                color: #333;
+                font-size: 20px;
+                line-height: 22px;
+                padding-top: 19px;
+            }
+        }
+    }
+}
+.widget_products {
+    ul.product_list_widget {
+        margin: 0;
+        li {
+            display: inline-block;
+            background: #f2f2f2;
+            margin-bottom: 2px;
+            border-bottom: 0px;
+            width: 100%;
+            overflow: hidden;
+            padding: 10px;
+            margin-top: 10px;
+            @include breakpoint-min(992px){
+                div.zo-product-img {
+                    width: 80px;
+                    max-width: 90px;
+                }
+                div.zo-product-detail {
+                    width: calc(100% - 100px);
+                }
+            }
+            .zo-product-img {
+                float: left;
+                margin-right: 20px;
+                background: #fff;
+                padding: 5px;
+                position: relative;
+                img {
+                    width: auto;
+                    max-width: 100%;
+                    margin: 0px;
+                }
+                &:hover {
+                    &:before {
+                        opacity: .8;
+                    }
+                    a {
+                        background: #f2f2f2;
+                        img {
+                            opacity: 1;
+                        }
+                    }
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    right: 5px;
+                    bottom: 5px;
+                    background-color: #fff;
+                    opacity: 0;
+                    @include transition(all 200ms ease-in-out);
+                }
+                a {
+                    position: absolute;
+                    left: 5px;
+                    top: 5px;
+                    width: calc(100% - 10px);
+                    height: calc(100% - 10px);
+                    img {
+                        position: absolute;
+                        opacity: 0;
+                        top:12px;
+                        left: 10px;
+
+                    }
+                }
+            }
+            .zo-product-detail {
+                float: left;
+                h3 {
+                    font-size: 17px;
+                    line-height: 22px;
+                    letter-spacing: 0;
+                    margin: 0;
+                    a {
+                        color: #333;
+                        font-weight: 400;
+                        &:hover {
+                            color: $primary_color;
+                        }
+                    }
+                }
+
+                span {
+                    font-size: 17px;
+                    line-height: 22px;
+                    letter-spacing: 0;
+                    color: #333;
+                    display: inline-block;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+.social-contact,.zo-social-service {
+    &.widget_zo_social_widget {
+        display: inline-block;
+        width: 100%;
+        margin-top: 30px;
+        ul {
+            padding: 0;
+            background: transparent;
+
+            font-size: 0;
+            margin: 0 -2.5px ;
+            li {
+                display: inline-block;
+                padding: 5px 2.5px;
+                margin-bottom: 5px;
+                font-size: 13px;
+                box-sizing:border-box;
+                border: 0px;
+                height: 64px;
+                line-height: 64px;
+                vertical-align: middle;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    text-align: center;
+                    display: block;
+                    background: #f2f2f2;
+                    width: 48px;
+                    height: 54px;
+                    line-height: 54px;
+                }
+
+                &:hover {
+                    //background: $primary_color;
+                    @include transition(all 200ms ease-in-out);
+                    position: relative;
+                    width: 55px;
+                    padding: 0 2.5px;
+
+                    a {
+                        position: absolute;
+                        height: 100%;
+
+                        transition:all 0s;
+                        color: #fff;
+                        background: $primary_color;
+                        //padding: 15px 19px;
+                        display: block;
+                        line-height: 64px;
+                    }
+                }
+            }
+        }
+    }
+}
+.zo-social-service.widget_zo_social_widget {
+    margin-top: 0px;
+}
+// Send Message
+.form-sidebar {
+    background: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    p {
+        &:last-child {
+            position: relative;
+            img {
+                position: absolute;
+                right: 45px;
+                top: 12px;
+            }
+        }
+    }
+
+    .wpcf7-validation-errors {
+        color: $primary_color;
+    }
+
+    input[type='text'],
+    textarea {
+        background: #fff;
+        margin-bottom: 0;
+        font-size: 17px;
+        line-height: 22px;
+        color: #777;
+        font-weight: 100;
+        font-style: normal;
+        padding-left: 18px;
+    }
+    input[type='text'] {
+        height: 40px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    .send-message {
+        background-color: $primary_color;
+        color: #FFF;
+        display: inline-block;
+        text-transform: capitalize;
+        width: auto;
+        height: 40px;
+        cursor: pointer;
+        font-weight: 100;
+        font-size: 17px;
+        line-height: 22px;
+        border: none;
+        padding: 0px 10px;
+        margin: 8px auto 6px auto;
+
+        &:hover {
+            background: #333;
+        }
+    }
+}
+/*End sidebar*/

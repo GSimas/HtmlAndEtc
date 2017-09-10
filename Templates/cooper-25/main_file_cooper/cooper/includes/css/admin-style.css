@@ -1,0 +1,614 @@
+#setting-error-tgmpa{width:95%;}
+.admin-color .button.ui-datepicker-current,
+.admin-color button.ui-datepicker-close,
+.wp-customizer .button.ui-datepicker-current,
+body.wp-customizer div .button.ui-datepicker-current,
+.wp-customizer button.ui-datepicker-close,
+body.wp-customizer div button.ui-datepicker-close {
+  background-color: #333333 !important;
+}
+
+.admin-color .ui-datepicker-buttonpane button.ui-datepicker-current,
+.wp-customizer .ui-datepicker-buttonpane button.ui-datepicker-current,
+body.wp-customizer div .ui-datepicker-buttonpane button.ui-datepicker-current {
+  background: #414E65 !important;
+  color: white !important;
+  border: 1px solid #104b66 !important;
+}
+.admin-color .ui-datepicker-header .ui-icon,
+.wp-customizer .ui-datepicker-header .ui-icon,
+body.wp-customizer div .ui-datepicker-header .ui-icon {
+  background-image: url(data:image/png;base64,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) !important;
+}
+
+.admin-color .ui-datepicker-header,
+.wp-customizer .ui-datepicker-header,
+body.wp-customizer div .ui-datepicker-header {
+  background-color: #303030 !important;
+  color: white !important;
+}
+
+.admin-color .ui-datepicker td .ui-state-active,
+.wp-customizer .ui-datepicker td .ui-state-active,
+body.wp-customizer div .ui-datepicker td .ui-state-active {
+  background-color: #333333 !important;
+  color: white !important;
+}
+
+.admin-color .ui-datepicker td .ui-state-hover,
+.wp-customizer .ui-datepicker td .ui-state-hover,
+body.wp-customizer div .ui-datepicker td .ui-state-hover {
+  color: #333333 !important;
+}
+
+.admin-color .ui-datepicker td .ui-state-highlight,
+.wp-customizer .ui-datepicker td .ui-state-highlight,
+body.wp-customizer div .ui-datepicker td .ui-state-highlight {
+  background: #333333 !important;
+  border: 1px solid #303030 !important;
+  color: white !important;
+}
+
+.admin-color .redux-container-switch .cb-disable,
+.admin-color .redux-container-switch .cb-enable,
+.admin-color .ui-state-default,
+.admin-color .ui-widget-content .ui-state-default,
+.admin-color .ui-widget-header .ui-state-default,
+.wp-customizer .redux-container-switch .cb-disable,
+.wp-customizer .redux-container-switch .cb-enable,
+.wp-customizer .ui-state-default,
+.wp-customizer .ui-widget-content .ui-state-default,
+.wp-customizer .ui-widget-header .ui-state-default,
+body.wp-customizer div .redux-container-switch .cb-disable,
+body.wp-customizer div .redux-container-switch .cb-enable,
+body.wp-customizer div .ui-state-default,
+body.wp-customizer div .ui-widget-content .ui-state-default,
+body.wp-customizer div .ui-widget-header .ui-state-default {
+  background-color: #f5f5f5 !important;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f5f5f5)) !important;
+  background-image: -moz-linear-gradient(top, #f8f8f8, #f5f5f5) !important;
+  background-image: -ms-linear-gradient(top, #f8f8f8, #f5f5f5) !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f8f8f8), color-stop(100%, #f5f5f5)) !important;
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f5f5f5) !important;
+  background-image: -o-linear-gradient(top, #f8f8f8, #f5f5f5) !important;
+  background-image: -linear-gradient(top, #f8f8f8, #f5f5f5) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#f5f5f5', GradientType=0) !important;
+  border-color: #ccc !important;
+}
+
+.admin-color .ui-datepicker td .ui-state-active,
+.wp-customizer .ui-datepicker td .ui-state-active,
+body.wp-customizer div .ui-datepicker td .ui-state-active {
+  color: black !important;
+  font-weight: 700 !important;
+  background: white !important;
+}
+
+.admin-color .redux-container-switch .cb-disable.selected,
+.wp-customizer .redux-container-switch .cb-disable.selected,
+body.wp-customizer div .redux-container-switch .cb-disable.selected {
+  background-color: #979797 !important;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#999999), to(#979797)) !important;
+  background-image: -moz-linear-gradient(top, #999999, #979797) !important;
+  background-image: -ms-linear-gradient(top, #999999, #979797) !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #999999), color-stop(100%, #979797)) !important;
+  background-image: -webkit-linear-gradient(top, #999999, #979797) !important;
+  background-image: -o-linear-gradient(top, #999999, #979797) !important;
+  background-image: -linear-gradient(top, #999999, #979797) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#999999', endColorstr='#979797', GradientType=0) !important;
+  border-color: #919191 !important;
+}
+
+.admin-color .redux-container-switch .cb-enable.selected,
+.admin-color .redux-field-container .ui-buttonset .ui-state-active,
+.wp-customizer .redux-container-switch .cb-enable.selected,
+.wp-customizer .redux-field-container .ui-buttonset .ui-state-active,
+body.wp-customizer div .redux-container-switch .cb-enable.selected,
+body.wp-customizer div .redux-field-container .ui-buttonset .ui-state-active {
+  background-color: #333333 !important;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#444444), to(#333333)) !important;
+  background-image: -moz-linear-gradient(top, #444444, #333333) !important;
+  background-image: -ms-linear-gradient(top, #444444, #333333) !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #444444), color-stop(100%, #333333)) !important;
+  background-image: -webkit-linear-gradient(top, #444444, #333333) !important;
+  background-image: -o-linear-gradient(top, #444444, #333333) !important;
+  background-image: -linear-gradient(top, #444444, #333333) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#333333', GradientType=0) !important;
+  border-color: #484848 !important;
+  border-color: #2f2f2f !important;
+  -webkit-box-shadow: inset 0 1px 0 #4e4e4e,0 1px 0 rgba(0,0,0,0.15) !important;
+  box-shadow: inset 0 1px 0 #4e4e4e,0 1px 0 rgba(0,0,0,0.15) !important;
+}
+
+.admin-color .ui-button { height: auto; padding: 10px 20px;}
+
+.admin-color #redux-header,
+.wp-customizer #redux-header,
+body.wp-customizer div #redux-header {
+  background: #303030;
+  border-color: #333333;
+}
+
+.admin-color #redux-header .display_header span,
+.wp-customizer #redux-header .display_header span,
+body.wp-customizer div #redux-header .display_header span {
+  color: #a0a5aa;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active.hasSubSections a,
+.wp-customizer .redux-sidebar .redux-group-menu li.active.hasSubSections a,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active.hasSubSections a {
+  position: relative;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active.hasSubSections a:after,
+.wp-customizer .redux-sidebar .redux-group-menu li.active.hasSubSections a:after,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active.hasSubSections a:after {
+  right: 0;
+  border: solid 8px transparent;
+  content: "\0020";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #fff;
+  top: 50%;
+  margin-top: -8px;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li a:after,
+.wp-customizer .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li a:after,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li a:after {
+  border: 0 none !important;
+  content: "\0020" !important;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.hasSubSections .redux-menu-error,
+.wp-customizer .redux-sidebar .redux-group-menu li.hasSubSections .redux-menu-error,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.hasSubSections .redux-menu-error {
+  display: none;
+  margin-right: 5px;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.hasSubSections a.hasError .extraIconSubsections,
+.wp-customizer .redux-sidebar .redux-group-menu li.hasSubSections a.hasError .extraIconSubsections,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.hasSubSections a.hasError .extraIconSubsections {
+  background-color: #b94a48;
+  color: #f2dede;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.hasSubSections a .extraIconSubsections,
+.wp-customizer .redux-sidebar .redux-group-menu li.hasSubSections a .extraIconSubsections,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.hasSubSections a .extraIconSubsections {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 0 solid transparent;
+  float: right;
+  font-size: 9px;
+  height: 9px;
+  line-height: 9px;
+  margin-right: 5px;
+  padding: 6px 7px 4px 7px;
+  width: 5px;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active a .extraIconSubsections,
+.admin-color .redux-sidebar .redux-group-menu li.activeChild a .extraIconSubsections,
+.wp-customizer .redux-sidebar .redux-group-menu li.active a .extraIconSubsections,
+.wp-customizer .redux-sidebar .redux-group-menu li.activeChild a .extraIconSubsections,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active a .extraIconSubsections,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.activeChild a .extraIconSubsections {
+  display: none;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active.hasSubSections .redux-menu-error,
+.admin-color .redux-sidebar .redux-group-menu li.activeChild.hasSubSections .redux-menu-error,
+.wp-customizer .redux-sidebar .redux-group-menu li.active.hasSubSections .redux-menu-error,
+.wp-customizer .redux-sidebar .redux-group-menu li.activeChild.hasSubSections .redux-menu-error,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active.hasSubSections .redux-menu-error,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.activeChild.hasSubSections .redux-menu-error {
+  display: block;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active.hasSubSections .subsection .redux-menu-error,
+.admin-color .redux-sidebar .redux-group-menu li.activeChild.hasSubSections .subsection .redux-menu-error,
+.wp-customizer .redux-sidebar .redux-group-menu li.active.hasSubSections .subsection .redux-menu-error,
+.wp-customizer .redux-sidebar .redux-group-menu li.activeChild.hasSubSections .subsection .redux-menu-error,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active.hasSubSections .subsection .redux-menu-error,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.activeChild.hasSubSections .subsection .redux-menu-error {
+  margin-right: 2px;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active,
+.admin-color .redux-sidebar .redux-group-menu li.activeChild,
+.wp-customizer .redux-sidebar .redux-group-menu li.active,
+.wp-customizer .redux-sidebar .redux-group-menu li.activeChild,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.activeChild {
+  border-left: 0 none;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active a,
+.admin-color .redux-sidebar .redux-group-menu li.activeChild a,
+.wp-customizer .redux-sidebar .redux-group-menu li.active a,
+.wp-customizer .redux-sidebar .redux-group-menu li.activeChild a,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active a,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.activeChild a {
+  color: #FFFFFF;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active.hasSubSections .active a:after,
+.admin-color .redux-sidebar .redux-group-menu li.activeChild.hasSubSections .active a:after,
+.wp-customizer .redux-sidebar .redux-group-menu li.active.hasSubSections .active a:after,
+.wp-customizer .redux-sidebar .redux-group-menu li.activeChild.hasSubSections .active a:after,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active.hasSubSections .active a:after,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.activeChild.hasSubSections .active a:after {
+  right: 0;
+  border: solid 8px transparent;
+  content: "\0020";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #fff;
+  top: 50%;
+  margin-top: -8px;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active.hasSubSections a,
+.admin-color .redux-sidebar .redux-group-menu li.activeChild.hasSubSections a,
+.wp-customizer .redux-sidebar .redux-group-menu li.active.hasSubSections a,
+.wp-customizer .redux-sidebar .redux-group-menu li.activeChild.hasSubSections a,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active.hasSubSections a,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.activeChild.hasSubSections a {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #fff;
+  width: auto;
+  border-bottom: 0;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li,
+.admin-color .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li,
+.wp-customizer .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li,
+.wp-customizer .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li {
+  border-top: 0 none !important;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li.active a:hover,
+.admin-color .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li.active a:hover,
+.wp-customizer .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li.active a:hover,
+.wp-customizer .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li.active a:hover,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li.active a:hover,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li.active a:hover {
+  color: #fff;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li a,
+.admin-color .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li a,
+.wp-customizer .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li a,
+.wp-customizer .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li a,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li a,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li a {
+  width: auto;
+  border-top: 0 !important;
+  padding: 7px;
+  color: #fff;
+  padding-left: 15px;
+  -webkit-transition: all 0.2;
+  -moz-transition: all 0.2;
+  -ms-transition: all 0.2;
+  -o-transition: all 0.2;
+  transition: all 0.2;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li a:hover,
+.admin-color .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li a:hover,
+.wp-customizer .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li a:hover,
+.wp-customizer .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li a:hover,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li a:hover,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li a:hover {
+  color: #414E65;
+  background: #0d0f10;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li a span.group_title,
+.admin-color .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li a span.group_title,
+.wp-customizer .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li a span.group_title,
+.wp-customizer .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li a span.group_title,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li a span.group_title,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li a span.group_title {
+  padding-left: 5px !important;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li.hasIcon a,
+.admin-color .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li.hasIcon a,
+.wp-customizer .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li.hasIcon a,
+.wp-customizer .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li.hasIcon a,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li.hasIcon a,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li.hasIcon a {
+  padding-left: 14px;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li.hasIcon a span.group_title,
+.admin-color .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li.hasIcon a span.group_title,
+.wp-customizer .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li.hasIcon a span.group_title,
+.wp-customizer .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li.hasIcon a span.group_title,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li.hasIcon a span.group_title,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li.hasIcon a span.group_title {
+  padding-left: 30px !important;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active.hasSubSections a,
+.wp-customizer .redux-sidebar .redux-group-menu li.active.hasSubSections a,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active.hasSubSections a {
+  background: #333333;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li a,
+.wp-customizer .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li a,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.active.hasSubSections ul.subsection li a {
+  background: #303030;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.activeChild.hasSubSections a,
+.wp-customizer .redux-sidebar .redux-group-menu li.activeChild.hasSubSections a,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.activeChild.hasSubSections a {
+  background: #525252;
+  text-shadow: 1px 1px #54595d;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li a,
+.wp-customizer .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li a,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li a {
+  background: #303030;
+  text-shadow: none;
+}
+
+.admin-color .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li.active a,
+.wp-customizer .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li.active a,
+body.wp-customizer div .redux-sidebar .redux-group-menu li.activeChild.hasSubSections ul.subsection li.active a {
+  background: #333333;
+  text-shadow: 1px 1px #002e44;
+}
+
+.admin-color .redux-container-image_select .redux-image-select-selected img,
+.wp-customizer .redux-container-image_select .redux-image-select-selected img,
+body.wp-customizer div .redux-container-image_select .redux-image-select-selected img {
+  border-color: #333333;
+}
+
+.admin-color #redux-footer #redux-share a,
+.wp-customizer #redux-footer #redux-share a,
+body.wp-customizer div #redux-footer #redux-share a {
+  color: #333333;
+}
+
+.admin-color #redux-footer #redux-share a:hover,
+.wp-customizer #redux-footer #redux-share a:hover,
+body.wp-customizer div #redux-footer #redux-share a:hover {
+  color: #002e44;
+}
+
+.admin-color .select2-results .select2-highlighted,
+.wp-customizer .select2-results .select2-highlighted,
+body.wp-customizer div .select2-results .select2-highlighted {
+  background: #333333;
+}
+
+.admin-color .select2-drop-active,
+.admin-color .select2-container-multi.select2-container-active .select2-choices,
+.admin-color .select2-drop.select2-drop-above.select2-drop-active,
+.admin-color .select2-container-active .select2-choice,
+.admin-color .select2-container-active .select2-choices,
+.admin-color .select2-dropdown-open.select2-drop-above .select2-choice,
+.admin-color .select2-dropdown-open.select2-drop-above .select2-choices,
+.wp-customizer .select2-drop-active,
+.wp-customizer .select2-container-multi.select2-container-active .select2-choices,
+.wp-customizer .select2-drop.select2-drop-above.select2-drop-active,
+.wp-customizer .select2-container-active .select2-choice,
+.wp-customizer .select2-container-active .select2-choices,
+.wp-customizer .select2-dropdown-open.select2-drop-above .select2-choice,
+.wp-customizer .select2-dropdown-open.select2-drop-above .select2-choices,
+body.wp-customizer div .select2-drop-active,
+body.wp-customizer div .select2-container-multi.select2-container-active .select2-choices,
+body.wp-customizer div .select2-drop.select2-drop-above.select2-drop-active,
+body.wp-customizer div.select2-container-active .select2-choice,
+body.wp-customizer div .select2-container-active .select2-choices,
+body.wp-customizer div .select2-dropdown-open.select2-drop-above .select2-choice,
+body.wp-customizer div.select2-dropdown-open.select2-drop-above .select2-choices {
+  border-color: #333333;
+}
+
+.admin-color .select2-dropdown-open.select2-drop-above .select2-choice,
+.admin-color .select2-dropdown-open.select2-drop-above .select2-choices,
+.wp-customizer .select2-dropdown-open.select2-drop-above .select2-choice,
+.wp-customizer .select2-dropdown-open.select2-drop-above .select2-choices,
+body.wp-customizer div .select2-dropdown-open.select2-drop-above .select2-choice,
+body.wp-customizer div .select2-dropdown-open.select2-drop-above .select2-choices {
+  border-top: inherit;
+}
+
+.admin-color .noUi-connect,
+.wp-customizer .noUi-connect,
+body.wp-customizer div .noUi-connect {
+  background-color: #333333 !important;
+  border-radius: 4px !important;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#454545), to(#333333)) !important;
+  background-image: -moz-linear-gradient(top, #454545, #333333) !important;
+  background-image: -ms-linear-gradient(top, #454545, #333333) !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #454545), color-stop(100%, #333333)) !important;
+  background-image: -webkit-linear-gradient(top, #454545, #333333) !important;
+  background-image: -o-linear-gradient(top, #454545, #333333) !important;
+  background-image: -linear-gradient(top, #454545, #333333) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#454545', endColorstr='#333333', GradientType=0) !important;
+}
+
+/* custom css */
+
+.admin-color #redux-header {
+	position: relative;
+	z-index: 0;
+	padding: 5px 25px 0px 25px;
+	border-bottom-color: #414E65;
+	background-size: cover;
+}
+
+.admin-color #redux-header:after {
+	content: '';
+	z-index: -2;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 0.9;
+	background: #393939;
+	background-image: -moz-linear-gradient(top,  #393939 0%, #1e1e1e 100%);
+	background-image: -webkit-linear-gradient(top,  #393939 0%,#1e1e1e 100%);
+	background-image: linear-gradient(to bottom,  #393939 0%,#1e1e1e 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#393939', endColorstr='#1e1e1e',GradientType=0 );
+}
+
+.admin-color #redux-header:before {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	background-image: url('../images/carna-bg.jpg');
+}
+
+.admin-color .ui-button-text-only {
+	border-radius: 0;
+}
+
+.admin-color .ui-corner-left {
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.admin-color .ui-corner-right {
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-moz-border-radius-bottomright: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.admin-color .redux-container-switch .cb-disable span, 
+.admin-color .redux-container-switch .cb-enable span {
+	font-weight: normal;
+}
+
+/* height */
+
+.admin-color .redux-container-switch .cb-disable,
+.admin-color .redux-container-switch .cb-enable,
+.admin-color .ui-widget-header .ui-state-default {
+  height: 40px;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+
+.admin-color .redux-container-switch .cb-disable span, 
+.admin-color .redux-container-switch .cb-enable span {
+  line-height: normal;
+}
+
+/* notices */
+
+.admin-color .redux-notice-field.redux-info { border-color: #2f2f2f; }
+.admin-color .redux-notice-field.redux-critical { border-color: #414E65; }
+
+.admin-color .notice-yellow {
+	background-color: #fdf9e9;
+    color: #d4b200;
+}
+
+.admin-color .redux-info-field.redux-info {
+    background-color: #F1F1F1;
+    border-color: #DCDCDC;
+    color: #212121;
+}
+
+/* slider */
+
+.admin-color .redux-container-slider .redux-slider-container {
+	margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* wp buttons */
+
+.admin-color .button-primary {
+    background: #3a3a3a;
+    border-color: #303030;
+    -webkit-box-shadow: 0 1px 0 #202020;
+    box-shadow: 0 1px 0 #202020;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #737373,1px 0 1px #737373,0 1px 1px #737373,-1px 0 1px #737373;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.admin-color .button-primary:hover {
+    background: #505050;
+    border-color: #383838;
+    -webkit-box-shadow: 0 1px 0 #383838;
+    box-shadow: 0 1px 0 #383838;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #737373,1px 0 1px #737373,0 1px 1px #737373,-1px 0 1px #737373;
+}
+
+.admin-color li.active>.redux-group-tab-link-a {
+	background: #424242 !important;
+}
+
+.admin-color li.active .redux-group-tab-link-a:hover {
+	background: #383838 !important;
+}
+
+/* promo box */
+img {vertical-align: middle;}
+.admin-color .display_header { width: 100%; text-align: left; margin: 10px 0px !important; }
+.admin-color .display_header h2 {color:transparent!important; width: 100%; text-align: left;  vertical-align: top;  min-height: 90px; margin: 0.2em 0 0.4em 0; background-image: url('../images/logo/logo.png'); background-repeat:no-repeat;}
+.admin-color .display_header h2>img { float: left; margin: 25px 0px; }
+.admin-color .display_header .wi-promo { float: right; margin: 10px 0px; text-align: center;}
+.admin-color .display_header .wi-promo img { max-width: 100%; }
+.admin-color #redux-header .display_header span.wi-promo { color: #fff;}
+
+/* dev mode */
+
+.redux-container #redux-header .display_header .redux-dev-mode-notice-container {
+	top: auto;
+	bottom: 1px;
+}
+
+.redux-container #redux-header .display_header span.redux-dev-mode-notice {
+	background-color: #414E65;
+}
+.admin-color .redux-sidebar .redux-group-menu li.active i {
+    color: #CDCDCD;
+}
+.redux-sidebar .redux-group-tab-link-a i{color:#414E65;}
+
+.admin-color  .rAds { visibility: hidden;}
+
+.redux-message.redux-notice, .redux-message,  .redux-notice{display:none!important;}

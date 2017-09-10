@@ -1,0 +1,60 @@
+@include keyframes(toLeftFromRight) {
+	49% {
+		@include transform(translate(-100%));
+	}
+	50% {
+		opacity: 0;
+		@include transform(translate(100%));
+	}
+	51% {
+		opacity: 1;
+	}
+}
+
+@include keyframes(toRightFromLeft) {
+	49% {
+		@include transform(translate(100%));
+	}
+	50% {
+		opacity: 0;
+		@include transform(translate(-100%));
+	}
+	51% {
+		opacity: 1;
+	}
+}
+
+@include keyframes(toTopFromBottom) {
+	49% {
+		@include transform(translateY(-100%));
+	}
+	50% {
+		opacity: 0;
+		@include transform(translateY(100%));
+	}
+	51% {
+		opacity: 1;
+	}
+}
+
+@include keyframes(toBottomFromTop) {
+	49% {
+		@include transform(translateY(100%));
+	}
+	50% {
+		opacity: 0;
+		@include transform(translateY(-100%));
+	}
+	51% {
+		opacity: 1;
+	}
+}
+
+@include keyframes(toTopFromBottom2){
+	0% {
+		@include transform(translateY(-100%));
+	}
+	100% {
+		@include transform(translateY(0));
+	}
+}

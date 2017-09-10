@@ -1,0 +1,154 @@
+/* Images */
+img {
+    max-width: 100%;
+}
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.entry-content .wp-caption,
+.post .wp-caption {
+    text-align: center;
+}
+.wp-caption {
+    max-width: 100%; /* Keep wide captions from overflowing their container. */
+    padding: 4px;
+}
+
+.wp-caption .wp-caption-text,
+.gallery-caption,
+.entry-caption {
+    font-style: italic;
+    font-size: 12px;
+    line-height: 2;
+    color: #757575;
+}
+
+img.wp-smiley,
+.rsswidget img {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+.entry-content dl.gallery-item {
+    margin: 0;
+}
+
+.gallery-item a,
+.gallery-caption {
+    width: 90%;
+}
+
+.gallery-item a {
+    display: block;
+}
+
+.gallery-caption a {
+    display: inline;
+}
+
+.gallery-columns-1 .gallery-item a {
+    max-width: 100%;
+    width: auto;
+}
+
+.gallery .gallery-icon img {
+    height: auto;
+    max-width: 90%;
+    padding: 5%;
+}
+
+.gallery-columns-1 .gallery-icon img {
+    padding: 3%;
+}
+
+/* Video background */
+.row-bg-video {
+    position: relative;
+    .zo-bg-video {
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100% !important;
+        height: 100% !important;
+        @include breakpoint-max(769px) {
+            display: none;
+        }
+    }
+    .wp-video-shortcode {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/**
+* Slideshow
+*/
+.rev_slider_wrapper {
+    .tparrows.default {
+        background: none;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        line-height: 37px;
+        text-align: center;
+        &.tp-leftarrow {
+            &:before {
+                content: "\f104";
+                font-family: FontAwesome;
+                font-size: 30px;
+            }
+        }
+        &.tp-rightarrow {
+            &:before {
+                content: "\f105";
+                font-family: FontAwesome;
+                font-size: 30px;
+            }
+        }
+        &:hover {
+            border-color: #FFF;
+            &:before {
+                color: #FFF;
+            }
+        }
+    }
+}
+/* Slideshow
+=============================================*/
+.wpb_revslider_element {
+    .tp-bullets {
+        z-index: 777;
+        &.simplebullets.round {
+            .bullet {
+                padding: 0;
+                background: none;
+                background-color: #FFF;
+                width: 50px;
+                height: 2px;
+                margin: 0 5px;
+                display: inline-block;
+                cursor: pointer;
+                &.selected {
+                    background: $primary_color;
+                }
+                &:hover {
+                    background: $primary_color;
+                }
+            }
+        }
+    }
+}

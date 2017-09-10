@@ -1,0 +1,363 @@
+# Copyright (C) 2016 the webRedox team
+msgid ""
+msgstr ""
+"Project-Id-Version: Bionick 0.1.20150828\n"
+"Report-Msgid-Bugs-To: https://webredox.net\n"
+"POT-Creation-Date: 2016-03-10 02:45:54+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:17
+msgid "404"
+#@ bionick
+msgstr ""
+
+#: 404.php:18
+msgid "Error"
+#@ bionick
+msgstr ""
+
+#: 404.php:19
+msgid "404"
+#@ bionick
+msgstr ""
+
+#: 404.php:27
+#@ bionick
+msgid "Oops it looks you tried to read a page that is no longer here."
+msgstr ""
+
+#: archive.php:20
+#: category.php:20
+#: index.php:20
+#: search.php:19
+#: single.php:21
+#: tag.php:20
+#@ bionick
+msgid "My Journal"
+msgstr ""
+
+#: archive.php:43
+#: archive.php:45
+#: archive.php:173
+#: archive.php:175
+#: archive.php:319
+#: archive.php:321
+#: archive.php:464
+#: archive.php:466
+#@ bionick
+msgid "Archive"
+msgstr ""
+
+#: archive.php:70
+#: archive.php:204
+#: archive.php:362
+#: archive.php:495
+#: blog.php:76
+#: blog.php:221
+#: blog.php:390
+#: blog.php:533
+#: category.php:70
+#: category.php:202
+#: category.php:358
+#: category.php:489
+#: index.php:76
+#: index.php:217
+#: index.php:382
+#: index.php:523
+#: search.php:65
+#: search.php:213
+#: search.php:385
+#: search.php:532
+#: single.php:74
+#: single.php:215
+#: single.php:382
+#: single.php:525
+#: tag.php:70
+#: tag.php:202
+#: tag.php:359
+#: tag.php:491
+#@ bionick
+msgid "Posted by"
+msgstr ""
+
+#: archive.php:121
+#: archive.php:255
+#: archive.php:413
+#: archive.php:546
+#: blog.php:127
+#: blog.php:272
+#: blog.php:441
+#: blog.php:584
+#: category.php:121
+#: category.php:253
+#: category.php:409
+#: category.php:540
+#: index.php:127
+#: index.php:268
+#: index.php:433
+#: index.php:574
+#: search.php:116
+#: search.php:264
+#: search.php:436
+#: search.php:583
+#: tag.php:121
+#: tag.php:253
+#: tag.php:410
+#: tag.php:542
+#@ bionick
+msgid "Continue reading ..."
+msgstr ""
+
+#: category.php:43
+#: category.php:45
+#: category.php:172
+#: category.php:174
+#: category.php:316
+#: category.php:318
+#: category.php:459
+#: category.php:461
+#@ bionick
+msgid "Category"
+msgstr ""
+
+#: comments.php:7
+#@ bionick
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:19
+#@ bionick
+msgid "One Comment"
+msgstr ""
+
+#: comments.php:19
+#@ bionick
+msgid "Comments"
+msgstr ""
+
+#: comments.php:41
+#@ bionick
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:50
+#@ bionick
+msgid "Leave A Comment"
+msgstr ""
+
+#: comments.php:57
+#@ bionick
+msgid "You must be logged in to post a comment."
+msgstr ""
+
+#: comments.php:67
+#@ bionick
+msgid "Logged in as"
+msgstr ""
+
+#: comments.php:67
+#@ bionick
+msgid "Log out of this account"
+msgstr ""
+
+#: comments.php:67
+#@ bionick
+msgid "Log out"
+msgstr ""
+
+#: comments.php:77
+#@ bionick
+msgid "Name"
+msgstr ""
+
+#: comments.php:84
+#@ bionick
+msgid "Email"
+msgstr ""
+
+#: comments.php:103
+#@ bionick
+msgid "Add Reply"
+msgstr ""
+
+#: comments.php:103
+#@ bionick
+msgid "Post Comment"
+msgstr ""
+
+#: functions.php:120
+#@ bionick
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:144
+#@ bionick
+msgid "Blog Sidebar"
+msgstr ""
+
+#: functions.php:146
+#@ bionick
+msgid "This area for blog widgets."
+msgstr ""
+
+#: functions.php:157
+#@ bionick
+msgid "Page Sidebar"
+msgstr ""
+
+#: functions.php:159
+#@ bionick
+msgid "This area for page widgets."
+msgstr ""
+
+#: functions.php:171
+#@ bionick
+msgid "Footer Sidebarr"
+msgstr ""
+
+#: functions.php:173
+#@ bionick
+msgid "This area for footer widgets."
+msgstr ""
+
+#: home-page.php:87
+#@ bionick
+msgid "Required"
+msgstr ""
+
+#: home-page.php:88
+#@ bionick
+msgid "Add This Page To "One Page Menu &amp; Home Page Menu" Location."
+msgstr ""
+
+#: home-page.php:92
+#@ bionick
+msgid "Click Here"
+msgstr ""
+
+#: index.php:47
+#: index.php:49
+#: index.php:185
+#: index.php:187
+#: index.php:338
+#: index.php:340
+#: index.php:491
+#: index.php:493
+#: single.php:48
+#: single.php:49
+#: single.php:185
+#: single.php:187
+#: single.php:340
+#: single.php:342
+#: single.php:495
+#: single.php:497
+#@ bionick
+msgid "Blog"
+msgstr ""
+
+#: index.php:48
+#: index.php:186
+#: index.php:339
+#: index.php:492
+#: single.php:49
+#: single.php:186
+#: single.php:341
+#: single.php:496
+#@ bionick
+msgid "Timeline"
+msgstr ""
+
+#: search.php:38
+#: search.php:182
+#: search.php:342
+#: search.php:501
+#@ bionick
+msgid "Search Result"
+msgstr ""
+
+#: search.php:39
+#: search.php:183
+#: search.php:343
+#: search.php:502
+#@ bionick
+msgid "Results for:"
+msgstr ""
+
+#: search.php:40
+#: search.php:184
+#: search.php:344
+#: search.php:503
+#@ bionick
+msgid "Search"
+msgstr ""
+
+#: search.php:135
+#: search.php:283
+#: search.php:455
+#: search.php:602
+#@ bionick
+msgid "Nothing Found"
+msgstr ""
+
+#: search.php:139
+#: search.php:287
+#: search.php:459
+#: search.php:606
+#@ bionick
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#: single.php:135
+#: single.php:276
+#: single.php:443
+#: single.php:586
+#@ bionick
+msgid "Share :"
+msgstr ""
+
+#: tag.php:43
+#: tag.php:45
+#: tag.php:172
+#: tag.php:174
+#: tag.php:317
+#: tag.php:319
+#: tag.php:461
+#: tag.php:463
+#@ bionick
+msgid "Tag"
+msgstr ""
+
+#: portfolio-default.php:19
+#: portfolio-full.php:17
+#: portfolio-inner.php:40
+#: portfolio-default.php:118
+#: portfolio-full.php:113
+#: portfolio-inner.php:161
+#: portfolio-default.php:217
+#: portfolio-full.php:209
+#: portfolio-inner.php:282
+#: portfolio-default.php:317
+#: portfolio-full.php:305
+#: portfolio-inner.php:403
+#@ bionick
+msgid "All"
+msgstr ""
+
+#: single-portfolio.php:50
+#: single-portfolio2.php:50
+#: single-portfolio3.php:50
+#@ bionick
+msgid "Category :"
+msgstr ""
+
+#: single-portfolio.php:54
+#: single-portfolio2.php:54
+#: single-portfolio3.php:54
+#@ bionick
+msgid "Date :"
+msgstr ""

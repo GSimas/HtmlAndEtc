@@ -1,0 +1,170 @@
+@CHARSET "ISO-8859-1";
+.zo_info{
+	background: rgba(197, 197, 197, 1);
+	padding: 10px;
+}
+.images-field ul>li {
+	height: 80px;
+	width: 80px;
+	background-color: #ddd;
+	display: inline-block;
+	text-align: center!important;
+}
+
+.images-field ul>li i {
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+	line-height: 85px;
+	display: initial;
+}
+#TB_ajaxContent{
+	width: auto!important;
+}
+
+#TB_ajaxContent ul>li {
+	display: inline-block;
+	line-height: 30px;
+	height: 30px;
+	width: 30px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+#TB_ajaxContent ul>li i {
+	font-size: 15px;
+}
+
+#TB_ajaxContent ul>li:HOVER {
+	border-color: #0696DA;
+	background-color: #ddd;
+}
+
+#TB_ajaxContent span {
+	text-transform: uppercase;
+	width: 100%;
+	border-bottom-style: double;
+}
+.zo_metabox_field label{
+	text-transform: uppercase;
+	color: #868686;
+	font-family: inherit;
+}
+.number-field input,.color-field input, .text-field input , .icon-field input , .date-field input, .select-field select {
+	height: 33px !important;
+	width: 200px !important;
+	margin-bottom: 15px;
+}
+.area-field textarea{
+	width: 100%;
+}
+/* switch */
+.switch-field {
+	height: 20px;
+	width: 38px;
+	border-radius: 22px;
+	cursor: pointer;
+	position: relative;
+	margin: 0 0 15px;
+}
+
+.switch-field.on {
+	background-color: #4dd865;
+	box-shadow: rgba(77, 216, 101, 0.03) 0px 0px 0px 1px;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.switch-field.off {
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.switch-field span {
+	position: absolute;
+	height: 22px;
+	width: 22px;
+	top: -1px;
+	border-radius: 12px;
+	background-color: #fff;
+}
+
+.switch-field.on span {
+	left: 18px;
+	box-shadow: rgba(0, 0, 0, 0.1) -1px 1px 1px 1px;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.switch-field.off span {
+	left: 0px;
+	box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px 1px;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+/*** number-field **/
+.number-field {
+	position: relative;
+}
+
+.number-field>div {
+	border-right: 1px solid #f1ecf5;
+	height: 34px;
+	left: 0;
+	padding: 6px 0 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 40px;
+}
+.number-field i {
+	display: block;
+	font-size: 16px;
+	line-height: 12px;
+	cursor: pointer;
+}
+
+.number-field input {
+	text-indent: 50px;
+}
+/*** image-field */
+.image-field ul li {
+	display: inline-block;
+	padding: 2px 2px 2px 0;
+}
+
+.image-field ul li img{
+	border: 4px solid #d9d9d9;
+}
+
+.image-field ul li.active img{
+	border-color: #0074a2!important;
+}
+
+@media screen and (max-device-width: 1600px) {
+	.image-field ul li img{
+		width: 100%;
+	}
+}
+/** metafield group **/
+.zo_metabox_group {
+    display: table-row;
+}
+.zo_metabox_group .zo_metabox_field {
+    display: table-cell;
+    padding-right: 20px;
+	padding-bottom: 20px;
+}
+/* Slider Field */
+.slider-field {
+	margin-bottom: 15px;
+}
+.zo-child {
+	border-left: 2px solid #4dd865;
+    padding-left: 30px;
+}

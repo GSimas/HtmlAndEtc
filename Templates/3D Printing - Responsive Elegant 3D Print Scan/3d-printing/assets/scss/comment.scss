@@ -1,0 +1,194 @@
+#comments {
+
+  .comments-title, .comment-reply-title {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+  .comment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px;
+    li {
+      position: relative;
+      list-style: none;
+    }
+    .comment-body {
+      margin-bottom: 25px;
+      padding: 20px;
+      overflow: hidden;
+      background: #f2f2f2;
+      .comment-author-image {
+        @include  breakpoint-max(768px){
+          margin-right: 10px;
+        }
+        float: left;
+        max-width: 70px;
+        img {
+          height: auto;
+          width: 70px;
+        }
+      }
+    }
+    .comment-main {
+      margin-left: 100px;
+      @media screen and (max-width: 767px) {
+        margin-left: 0;
+      }
+      .comment-header {
+        overflow: hidden;
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 8px;
+        .comment-data {
+          float: left;
+          margin-top: -5px;
+          .comment-author {
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 26px;
+            @include breakpoint-max(1200px){
+              line-height: 1.5;
+            }
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            a {
+              color: #333;
+            }
+          }
+          .comment-date {
+            color: #777;
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 300;
+            letter-spacing: 0;
+          }
+          .comment-awaiting-moderation {
+            color: $primary_color;
+          }
+        }
+        .reply {
+          text-align: right;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: 0;
+          text-transform: capitalize;
+          color: $primary_color;
+          //padding: 20px;
+          a {
+            color: $primary_color;
+
+            &:hover {
+              color: #333;
+            }
+          }
+        }
+      }
+      .comment-content {
+      }
+      .reply {
+        text-align: right;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+    }
+
+    ul.children {
+      padding-left: 70px;
+      position: relative;
+
+      .comment-author-image {
+        max-width: 109px;
+        float: left;
+      }
+
+    }
+  }
+  #commentform {
+    p {
+      margin: 0 0 10px;
+      input[type="text"], textarea {
+        @include border-radius(0);
+        font-size: 13px;
+        border-color: #ebebeb;
+        &:focus {
+          border-color: $primary_color;
+        }
+      }
+      label {
+        @extend .font-second;
+        font-size: 12px;
+        font-style: italic;
+        letter-spacing: 0.1em;
+        color: #141414;
+        text-transform: uppercase;
+      }
+      &.comment-form-author,
+      &.comment-form-email {
+        width: 50%;
+        float: left;
+        padding-right: 20px;
+        input {
+          background: #f2f2f2;
+          border: none;
+          font-size: 17px;
+          line-height: 26px;
+          color: #333;
+          letter-spacing: 0;
+          font-weight: 300;
+        }
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          padding-right: 0;
+        }
+      }
+      &.comment-form-email {
+        padding-right: 0;
+      }
+      &.comment-form-comment {
+        clear: both;
+        margin-bottom: 28px;
+        padding-top: 10px;
+        textarea {
+          color: #333;
+          font-size: 17px;
+          line-height: 22px;
+          letter-spacing: 0;
+          font-weight: 300;
+          height: 120px;
+          max-height: 120px;
+          background: #f2f2f2;
+          border: none;
+        }
+
+      }
+      &.form-submit {
+        text-align: left;
+        input {
+          font-size: 17px;
+          line-height: 22px;
+          padding: 13px 50px;
+          text-transform: uppercase;
+          background: $primary_color;
+          @include border_radius(0);
+          color: #fff;
+          font-weight: 400;
+          border: none;
+          &:hover {
+            background:$link_color ;
+          }
+        }
+      }
+    }
+  }
+}
+
+.single #comments {
+  margin-bottom: 100px;
+
+}

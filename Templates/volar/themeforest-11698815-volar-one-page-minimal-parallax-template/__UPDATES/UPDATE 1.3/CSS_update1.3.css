@@ -1,0 +1,124 @@
+
+/*
+  ========================================
+          Home Section Text Mask
+  ========================================
+*/
+
+.text-mask-light {
+    background-image: url(../img/backgrounds/home-background-01.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    text-align: center;
+}
+
+.retina-support .text-mask-light {
+    background-image: url("../img/backgrounds/home-background-01.jpg");
+}
+
+@media only screen and (min-device-width: 320px) {
+    .retina-support .text-mask-light {
+        background-image: url("../img/backgrounds/home-background-01.jpg");
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2.4),
+(min--moz-device-pixel-ratio: 2.4),
+(-o-min-device-pixel-ratio: 12/5),
+(min-resolution: 2.4dppx) {
+    .retina-support .text-mask-light {
+        background-image: url("../img/backgrounds/home-background-01@2x.jpg");
+    }
+}
+
+@media only screen and (min-device-width: 1200px) {
+    .retina-support .text-mask-light {
+        background-image: url("../img/backgrounds/home-background-01@lg.jpg");
+    }
+}
+
+@media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5),
+(min--moz-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 1.5dppx) {
+    .retina-support .text-mask-light {
+        background-image: url("../img/backgrounds/home-background-01@lg2x.jpg");
+    }
+}
+
+.text-mask {
+    margin-top: 40px;
+    border-radius: 4px;
+    background: #fff;
+    color: #000;
+    mix-blend-mode: lighten;
+}
+
+/*
+   ====================================================
+    Fixing sticky navbar hiding issue at About section*
+   ====================================================
+*/
+/*  The difference between padding-top and padding-bottom of .sticky-nav-here element and marging-top of .sticky-visible-here must be the height of the .navbar in normal state -not transarent-. here it is assumed that the height of .navbar is 60px. */
+
+.sticky-nav-here {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .sticky-nav-here {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sticky-nav-here {
+        padding-top: 150px;
+        padding-bottom: 90px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sticky-nav-here {
+        padding-top: 180px;
+        padding-bottom: 120px;
+    }
+}
+
+.sticky-visible-here {
+    margin-top: -60px;
+    /* must be the height of navbar */
+}
+
+/*
+   ====================================================
+    Fixing Flat Surface Shader full-width issue on iOS
+   ====================================================
+*/
+
+.fss-solid {
+    width: 100vw !important;
+}
+/*
+   ====================================================
+     Making portfolio item buttons lorger on mobiles
+   ====================================================
+*/
+.portfolio-item-detail a {
+    display: inline-block;
+    height: 60px;
+    width: 80px;
+    line-height: 60px;
+}
+
+@media (min-width: 768px) {
+    .portfolio-item-detail a {
+        padding: 0 10px;
+        font-size: 28px;
+        display: inline;
+        line-height: 1.2;
+    }
+}

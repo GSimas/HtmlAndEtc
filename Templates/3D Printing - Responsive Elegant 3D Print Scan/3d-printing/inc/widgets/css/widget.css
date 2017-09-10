@@ -1,0 +1,19 @@
+.zframe-flickr-wrap-ltr,
+.zframe-flickr-wrap-rtl {
+	display: block;
+	overflow: hidden;
+}
+.zframe-flickr-wrap-ltr img,
+.zframe-flickr-wrap-rtl img {
+    margin-bottom: 10px;
+}
+
+.zframe-flickr-wrap-ltr img {
+	float: left;
+	margin-right: 10px;
+}
+
+.zframe-flickr-wrap-rtl img {
+	float: right;
+	margin-left: 10px;
+}

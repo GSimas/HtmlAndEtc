@@ -1,0 +1,392 @@
+.gw-cloning {
+	display: none;
+}
+.widget .widget-inside .gw-sortable {
+	background-color: #f5f5f5; /* Fallback */
+	background-image: -ms-linear-gradient(top, #f9f9f9, #f5f5f5); /* IE10 */
+	background-image: -moz-linear-gradient(top, #f9f9f9, #f5f5f5); /* Firefox */
+	background-image: -o-linear-gradient(top, #f9f9f9, #f5f5f5); /* Opera */
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f5f5f5)); /* old Webkit */
+	background-image: -webkit-linear-gradient(top, #f9f9f9, #f5f5f5); /* new Webkit */
+	background-image: linear-gradient(top, #f9f9f9, #f5f5f5); /* proposed W3C Markup */
+	border: 1px solid #DFDFDF;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+	position:relative;
+	cursor: pointer;
+    margin-bottom: 7px;
+    padding: 5px;
+}
+.gw-delete {
+	background: url(../img/delete.png) no-repeat scroll -2px -3px transparent;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	border: 1px solid #ddd;
+  -webkit-border-radius: 1px;
+     -moz-border-radius: 1px;
+          border-radius: 1px;
+	right: 8px;
+	top: 8px;
+	cursor: pointer;
+}
+.gw-delete:hover {
+	border: 1px solid #bbb;
+}
+.gw-add-widget {
+	border-bottom: 1px dashed #E8E8E8;
+    margin-bottom: 7px;
+    padding-bottom: 9px;
+}
+
+
+/* Shortcode dialog properties
+================================================================== */
+#optionSection {
+	height: auto !important;
+	margin-bottom: 41px;
+	background: url(../img/background.png) repeat-x scroll left top #F7F7F7;
+	padding: 15px;
+    position: relative;	
+}
+#optionSection select {
+    height: 2em;
+    padding: 2px;
+}
+#optionSection .hide-if-js {
+    display: none;
+}
+#buttonSection input[type="button"] {
+	-webkit-border-radius: 3px;
+	 -moz-border-radius: 3px;
+		  border-radius: 3px;
+}
+#optionSection .clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+#buttonSection {
+    background-color: #F9F9F9;
+    border-top: 1px solid #DFDFDF;
+    bottom: 0;
+    margin: 0;
+    position: fixed;
+    text-align: right;
+    width: 100%;
+}
+#buttonSection .inner {
+	padding: 10px 20px;
+}
+
+
+/* Shortocode and widget dialog properties
+================================================================== */
+.totalControls .role {
+    border: 1px solid #DFDFDF;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 0 #FFFFFF inset;
+    background-color: #F5F5F5;
+    background-image: -moz-linear-gradient(center top , #F9F9F9, #F5F5F5);
+	padding: 5px 10px;	
+	margin-top: 5px;
+	text-shadow: 1px 1px #fff;
+	cursor: move;
+}
+.totalControls .placeholder {
+    border: 1px dashed #DFDFDF;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 #FFFFFF inset;
+	padding: 13px 10px;	
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.totalControls .role label {
+    font-weight: normal;
+}
+.totalControls .role .totalUser {
+    color: #AAAAAA;
+    float: right;
+    font-size: 11px;
+}
+.totalControls a.rsswidget {
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.totalControls a {
+	text-decoration: none;
+}
+.totalControls label {
+    font-weight: bold;
+    color: #222222;
+	font-size: 13m;
+	display: block;
+    text-shadow: 0 1px 0 #FFFFFF;	
+}
+.totalControls .jj,
+.totalControls .hh,
+.totalControls .mn {
+	width: 2em;
+}
+.totalControls .aa {
+    width: 3.4em;
+}
+.totalControls .timestamp span {
+	font-weight: bold;
+}
+.totalControls .edit-timestamp {
+    font-size: 11px;
+}
+.totalControls textarea:hover, .totalControls input[type="text"]:hover {
+    background-color: #f9f9f9;
+}
+.totalControls select[multiple="multiple"] {
+	width: 100%;
+	height: 8em !important;
+}
+.totalControls input[type="checkbox"],
+.totalControls input[type="radio"] {
+    margin: 1px 4px 0 0;
+}
+.totalControls input.smallfat {
+	width: 66px;
+}
+.totalControls select.smallfat {
+	min-width: 66px;
+}
+.totalControls .controlDesc {
+    font-size: 11.25px;
+	display: block;
+	color: #888;
+	margin-bottom: 4px;
+}
+.totalControls .controlDesc code {
+	color: #555;
+}
+.totalControls table .controlDesc {
+	color: #666;
+	margin-bottom: 0;
+}
+.totalControls table .separator {
+	width: 10%;
+}
+.totalControls .optionImage {
+	margin-bottom: 8px;
+	display: block;
+}
+.totalControls .pickcolor span {
+    background: url("../img/color.png") no-repeat scroll center center transparent;
+    margin-left: 5px;
+    padding: 2px 10px;
+}
+.totalControls .farbtastic-wrapper {
+	display:none;
+	margin-top: 10px;
+}
+.totalControls .farbtastic {
+	background:#eee;
+	border:1px solid #ccc;
+}
+
+.totalControls ul.tab-content li ul li {
+    border-bottom: 1px dashed #e8e8e8;
+    margin-bottom: 7px;
+    padding-bottom: 9px;
+}
+.totalControls ul.tab-content li ul li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.totalControls .optionImage {
+    display: block;
+    max-width: 100%;
+}
+.totalControls .addImage,
+.totalControls .button,
+.totalControls .removeImage {
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+.totalControls .removeImage {
+	color: orangered;
+}
+.totalControls .hideRemove {
+	display: none;
+}
+.pluginVersion {
+    color: #BBBBBB;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 5px;
+}
+.pluginName {
+    color: #cccccc;
+    display: block;
+    font-size: 18px;
+    margin: 10px 15px;
+    text-shadow: 1px 1px #FFFFFF;
+}
+.widget .ntotalWidgetBg {
+    background: url("../img/background.png") no-repeat scroll left top #F7F7F7;
+    border-top: 1px solid #E4E4E4;
+    position: relative;
+}
+
+
+/* Template Style
+----------------------------------------------------------------------------------------------------*/
+.totalControls .apw-template p {
+    margin-bottom: 5px;
+}
+.totalControls .template-left .template-image {
+	float: left;
+	width: 55px;
+	height: 55px;
+	overflow: hidden;
+	margin-right: 10px;
+}
+.totalControls .template-right .template-image {
+	float: right;
+	width: 55px;
+	height: 55px;
+	margin-left: 10px;
+}
+.totalControls .template-title {
+	display: block;
+	font-size: 13px;
+}
+.totalControls .template-image {
+	overflow: hidden;
+}
+.totalControls .template-date,
+.totalControls .template-comments {
+    color: #555555;
+    font-size: 11px;
+}
+.totalControls .template-date {
+    background: url("../img/icons.png") no-repeat scroll 0 0 transparent;
+    padding-left: 20px;
+	margin-right: 10px;
+}
+.totalControls .template-comments {
+    background: url("../img/comments.png") no-repeat scroll 0 0 transparent;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+
+
+/* Widgets Tabs. ------------------------ */
+.tabbable:after {
+	clear: both;
+}
+.tabbable:before, .tabbable:after {
+    content: "";
+    display: table;
+}
+.nav-tabs {
+    list-style: none outside none;
+    margin-bottom: 18px;
+    margin-left: 0;
+	margin-top: 24px;
+}
+.tabs-below > .nav-tabs, .tabs-right > .nav-tabs, .tabs-left > .nav-tabs {
+    border-bottom: 0 none;
+}
+.nav-tabs:after, .nav-pills:after {
+    clear: both;
+}
+.nav-tabs:before, .nav-pills:before, .nav-tabs:after, .nav-pills:after {
+    content: "";
+    display: table;
+}
+.nav-tabs:before, .nav-pills:before, .nav-tabs:after, .nav-pills:after {
+    content: "";
+    display: table;
+}
+.tabs-left > .nav-tabs {
+    float: left;
+}
+.tabs-left > .nav-tabs > li, .tabs-right > .nav-tabs > li {
+    float: none;
+}
+.nav-tabs > li {
+    margin-bottom: -1px;
+}
+.tabs-left > .nav-tabs .active, .tabs-left > .nav-tabs .active:hover {
+    border-color: #DDDDDD rgba(255, 255, 255, 0.8) #DDDDDD #DDDDDD;
+}
+.tabs-left > .nav-tabs > li {
+    border-radius: 4px 0 0 4px;
+    margin-right: -1px;
+}
+.tabs-left > .nav-tabs > li, .tabs-right > .nav-tabs > li {
+    margin-bottom: 3px;
+    margin-right: 0;
+    min-width: 74px;
+}
+.nav-tabs > .active > a, .nav-tabs > .active:hover {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #transparent;
+    border-color: #DDDDDD #DDDDDD transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #555555;
+    cursor: default;
+}
+.nav-tabs > li {
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    color: #999999;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    line-height: 14px;
+    margin-right: 2px;
+    padding: 8px 20px 8px 15px;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+
+.tabs-left > .nav-tabs .active, .tabs-left > .nav-tabs .active:hover {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+    color: #222222;
+	opacity: 1;
+}
+.tabs-left > .nav-tabs > li {
+    border-radius: 4px 0 0 4px;
+    margin-right: -1px;
+}
+.nav-tabs > li:hover {
+    background-color: #F2F2F2;
+    text-decoration: none;
+}
+.tabs-left > .nav-tabs > li:hover {
+    border-color: #DDDDDD;
+	opacity: 0.5;
+	color: #222222;
+}
+.tabs-left > .nav-tabs .active:hover {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+}
+.tab-content > .tab-pane {
+    display: none;
+}
+.tab-content > .active {
+    display: block;
+}
+.tab-content {
+    border: 1px solid #DDDDDD;
+    min-height: 300px;
+    overflow: auto;
+    padding: 19px;
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+	border-radius: 3px;
+}
+.total-loading {
+	padding-left: 20px;
+	background: url(../img/loading.gif) no-repeat scroll 0 0 transparent;
+}

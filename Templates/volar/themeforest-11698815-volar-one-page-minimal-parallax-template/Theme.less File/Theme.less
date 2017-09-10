@@ -1,0 +1,2128 @@
+
+//== Color variables
+//
+//
+@gray-darker: #0C0C17;
+@gray-dark: #171724;
+@gray: #757A86;
+@gray-mid-light: #706F83;
+@gray-light: #B8B7CB;
+@gray-lighter: #F5F5FA;
+//
+//
+@brand-primary: @scuba-blue;
+@brand-success: #5cb85c;
+@brand-info: #5bc0de;
+@brand-warning: #f0ad4e;
+@brand-danger: #d9534f;
+@white: #fff;
+@transparant: rgba(255, 255, 255, 0);
+//
+//
+//
+/*==========  Theme  ==========*/
+/* 
+ General Theme
+ -------------------------
+ */
+
+a {
+    .text-color(@link-color);
+    text-decoration: none;
+    &:hover, &:focus {
+        color: @link-hover-color;
+    }
+}
+
+p a {
+    border-bottom: 1px solid @link-color;
+    &:hover {
+        border-bottom: 1px solid @link-hover-color;
+    }
+}
+
+// .lead {
+//     color: @gray;
+// }
+body {
+    .text-color(@body-color);
+    .text-selection(@brand-primary, @white);
+    background: @white;
+}
+
+#page,
+#page-2 {
+    background: @white;
+}
+/* 
+ Loaders
+ -------------------------
+ */
+
+.loader1-theme (@loader-background-color);
+.loader2-theme (@loader-background-color);
+.loader3-theme (@loader-color;
+@loader-border-fade-color);
+.page-loader-text {
+    color: @loader-color;
+}
+/* 
+ Scroll Bar
+ -------------------------
+ */
+
+.scroll-progressbar {
+    background: fade(@gray-darker, 5%);
+    div {
+        background: @brand-primary;
+    }
+    .scroll-shadow {
+        box-shadow: 0 0 10px @brand-primary, 0 0 5px @brand-primary;
+    }
+}
+/* 
+ Titles
+ -------------------------
+ */
+
+.section-title-heading {
+    color: @title-color;
+}
+
+.section-title-more {
+    color: fade(@gray-darker, 90%);
+}
+
+// .title-border-bottom {
+//     &:after {
+//         background: @brand-primary;
+//     }
+// }
+/* 
+ Alternate Buttons
+ -------------------------
+ */
+
+// .button-variant(
+// @color;
+// @background;
+// @border;
+// @hover-color;
+// @hover-background;
+// @active-background;
+// @hover-border,
+// @ripple-color);
+/* Default Button */
+
+.btn-default {
+    .button-variant( @gray-darker;
+    @white;
+    @gray-darker;
+    @gray-darker;
+    @gray-lighter;
+    @white;
+    @gray-lighter;
+    fade(@white, 100%));
+}
+
+.btn-split.btn-default {
+    background: @gray-darker;
+    &:hover {
+        background: @gray-lighter;
+    }
+    &::before,
+    &::after {
+        background: @white;
+        color: @gray-darker;
+    }
+}
+/* Colored Button */
+
+.btn-colored {
+    .button-variant( @brand-primary;
+    @white;
+    @brand-primary;
+    @brand-primary;
+    @gray-darker;
+    @white;
+    @gray-darker;
+    fade(@white, 15%));
+}
+
+.btn-split.btn-colored {
+    background: @brand-primary;
+    &:hover {
+        background: @gray-darker;
+    }
+    &::before,
+    &::after {
+        background: @gray-dark;
+        color: @brand-primary;
+    }
+}
+/* Dark Button */
+/* Dark Button */
+
+.btn-dark {
+    .button-variant( @white;
+    @gray-dark;
+    @gray-dark;
+    @gray-dark;
+    @white;
+    @gray-dark;
+    @white;
+    fade(@gray-dark, 20%));
+}
+
+.btn-split.btn-dark {
+    background: @gray-darker;
+    &:hover {
+        background: @white;
+    }
+    &::before,
+    &::after {
+        background: @gray-dark;
+        color: @white;
+    }
+}
+/* Dark to Color on Hover Button */
+
+.btn-dark-to-color {
+    .button-variant(@white;
+    @gray-darker;
+    @gray-darker;
+    @gray-darker;
+    @brand-primary;
+    @brand-primary;
+    darken(@brand-primary, 80%);
+    darken(fade(@brand-primary, 20%), 50%));
+}
+
+.btn-split.btn-dark-to-color {
+    color: @gray-darker;
+    background: @gray-darker;
+    &:hover {
+        background: @brand-primary;
+    }
+    &::before,
+    &::after {
+        background: @gray-dark;
+        color: @white;
+    }
+}
+/* Transparent to White on Hover Button */
+
+.btn-transparent-white {
+    .button-variant(@white;
+    transparent;
+    @white;
+    @gray-dark;
+    @white;
+    transparent;
+    @white;
+    fade(@gray-dark, 30%));
+}
+
+.btn-split.btn-transparent-white {
+    color: @gray-darker;
+    // background: transparent;
+    &:hover {
+        background: @white;
+    }
+    &::before,
+    &::after {
+        background: transparent;
+        color: @white;
+    }
+}
+/* White to Transparent on Hover Button */
+
+.btn-white-transparent {
+    .button-variant(@gray-darker;
+    @white;
+    @white;
+    @white;
+    transparent;
+    @white;
+    @white;
+    fade(@white, 35%));
+}
+
+.btn-split.btn-white-transparent {
+    // color: @white;
+    background: @white;
+    &:hover {
+        background: transparent;
+    }
+    &::before,
+    &::after {
+        background: @white;
+        color: @gray-darker;
+    }
+}
+/* Transparent to Dark on Hover Button */
+
+.btn-transparent-dark {
+    .button-variant(@gray-darker;
+    transparent;
+    @gray-darker;
+    @white;
+    @gray-darker;
+    transparent;
+    @gray-darker;
+    fade(@white, 25%));
+}
+
+.btn-split.btn-transparent-dark {
+    color: @white;
+    // background: transparent;
+    &:hover {
+        background: @gray-darker;
+        // color: @white;
+    }
+    &::before,
+    &::after {
+        background: transparent;
+        color: @gray-darker;
+    }
+}
+/* Dark to Transparent on Hover Button */
+
+.btn-dark-transparent {
+    .button-variant(@white;
+    @gray-darker;
+    @gray-darker;
+    @gray-darker;
+    transparent;
+    @gray-darker;
+    @gray-darker;
+    fade(@gray-darker, 70%));
+}
+
+.btn-split.btn-dark-transparent {
+    color: @gray-darker;
+    background: @gray-darker;
+    &:hover {
+        background: transparent;
+    }
+    &::before,
+    &::after {
+        background: @gray-darker;
+        color: @white;
+    }
+}
+
+.btn-contact {
+    color: @white;
+    background: @gray-dark;
+    &::before, &::after {
+        background: @gray-darker;
+        color: @white;
+    }
+    .ink {
+        background: lighten(rgb(215, 51, 58), 10%);
+    }
+    .loader3-theme (@white;fade(@white, 15%));
+}
+
+.btn-loading {
+    .ink {
+        background: lighten(rgb(15, 160, 131), 10%);
+    }
+}
+/* 
+ Carousel Arrows
+ -------------------------
+ */
+
+.carousel-control {
+    .arrow-left, .arrow-right {
+        background: fade(@gray-dark, 30%);
+        border-color: fade(@white, 10%);
+        &::before {
+            border-color: fade(@white, 100%);
+        }
+    }
+}
+
+// /* 
+//  Carousel Indicators
+//  -------------------------
+//  */
+// .carousel-indicators {
+//     li {
+//         border: 1px solid @carousel-indicator-border-color;
+//         transition: background .5s ease;
+//     }
+//     .active {
+//         background: @carousel-indicator-active-bg;
+//     }
+// }
+.dotstyle-fall {
+    li, div {
+        &:after {
+            background: fade(@white, 40%);
+        }
+        a,
+        span {
+            background: fade(@white, 40%);
+        }
+        & a:focus,
+        &.active a,
+        & span:focus,
+        &.active span {
+            background: fade(@carousel-elements-color-over, 100%);
+        }
+        &.active,
+        &.current {
+            background: 0;
+            &:after {
+                background: fade(@carousel-elements-color-over, 60%);
+            }
+        }
+    }
+}
+
+.light,
+.dots-under {
+    .dotstyle-fall {
+        li, div {
+            &:after {
+                background: fade(@gray-dark, 30%);
+            }
+            a,
+            span {
+                background: fade(@gray-dark, 30%);
+            }
+            & a:focus,
+            &.active a,
+            & span:focus,
+            &.active span {
+                background: fade(@carousel-elements-color, 100%);
+            }
+            &.active {
+                background: 0;
+                &:after {
+                    background: fade(@carousel-elements-color, 60%);
+                }
+            }
+        }
+    }
+}
+
+.no-touch {
+    .dotstyle-fall {
+        li, div {
+            &:hover span, &:hover a {
+                background: fade(@carousel-elements-color, 60%);
+            }
+        }
+    }
+}
+
+// .dotstyle-fill {
+//     li, div {
+//         a, span {
+//             background-color: transparent;
+//             box-shadow: inset 0 0 0 0 white;
+//             &:hover, &:focus {
+//                 background-color: transparent;
+//                 // box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6)
+//             }
+//         }
+//         &.active,
+//         &.current {
+//             background-color: transparent;
+//             a, span {
+//                 background-color: transparent;
+//                 box-shadow: inset 0 0 0 16px white;
+//             }
+//         }
+//     }
+// }
+.dotstyle-fillup {
+    li, div {
+        a, span {
+            background-color: rgba(255, 255, 255, 0.3);
+            // box-shadow: 0 0 0 1px white inset;
+            &:after {
+                background-color: @white;
+                // box-shadow: 0 0 1px #fff;
+            }
+        }
+        &:hover {
+            a, span {
+                // background: transparent;
+            }
+        }
+    }
+}
+/* 
+ Scroll Down Arrow
+ -------------------------
+ */
+
+.scroll-down-arrow {
+    a {
+        color: @white;
+    }
+}
+
+// .play-vid-button {
+//     color: @white;
+//     &:hover {
+//         color: @white;
+//     }
+// }
+/* 
+ Overlay
+ -------------------------
+ */
+
+.overlay {
+    h1, h2, h3, h4, h5, h6, .big-icon, .fact-number, .section-title, .section-title-heading, p {
+        color: @white;
+    }
+    .section-title-more {
+        color: fade(@white, 95%);
+    }
+    &:before {
+        background-color: fade(@gray-darker, 80%);
+        opacity: .7;
+    }
+}
+
+.home-section {
+    &.overlay, .overlay {
+        &:before {
+            background-color: fade(@gray-darker, 70%);
+            opacity: .5;
+        }
+    }
+    .fss {
+        &.overlay {
+            &:before {
+                background-color: rgba(0, 0, 0, 1);
+                opacity: .8;
+            }
+        }
+    }
+}
+
+.as-overlay .as-background:after {
+    background-color: fade(@gray-darker, 70%);
+    opacity: .5;
+}
+
+.equal {
+    .home-section {
+        &.overlay, .overlay {
+            &:before {
+                // background-color: fade(@gray-darker, 90%);
+                opacity: .7;
+            }
+        }
+        .fss {
+            &.overlay {
+                &:before {
+                    background-color: rgba(0, 0, 0, 1);
+                    opacity: .95;
+                }
+            }
+        }
+    }
+    .as-overlay .as-background:after {
+        background-color: fade(@gray-darker, 90%);
+        opacity: .7;
+    }
+}
+
+.home-section {
+    .carousel {
+        .dotstyle-fall {
+            li, div {
+                &:after {
+                    background: fade(@white, 40%);
+                }
+                a,
+                span {
+                    background: fade(@white, 40%);
+                }
+                & a:focus,
+                &.active a,
+                & span:focus,
+                &.active span {
+                    background: fade(@white, 100%);
+                }
+                &.active,
+                &.current {
+                    background: 0;
+                    &:after {
+                        background: fade(@white, 100%);
+                    }
+                }
+            }
+        }
+    }
+}
+/* 
+ Light Overlay
+ -------------------------
+ */
+
+.light {
+    .navbar-transparent {
+        .navbar-brand p {
+            .text-color(@gray-dark);
+        }
+        .logo-svg-path-navbar {
+            fill: @gray-dark;
+        }
+        .navbar-text {
+            color: fade(@gray-dark, 70%);
+        }
+        .navbar-toggle {
+            .icon-bar {
+                background-color: @gray-dark;
+            }
+        }
+        @media (min-width: 768px) {
+            &.ripple-group-parent {
+                .ink {
+                    background: fade(@gray-dark, 20%);
+                }
+            }
+            .navbar-nav {
+                > li > a {
+                    .text-color(fade(@gray-dark, 70%));
+                    &:hover {
+                        color: @gray-dark;
+                    }
+                    &:focus {
+                        color: fade(@gray-dark, 70%);
+                    }
+                }
+                > .active > a {
+                    &, &:hover, &:focus {
+                        color: @gray-dark;
+                    }
+                }
+            }
+            .cl-effect-5 > li > a span[data-hover]:before {
+                color: @gray-dark;
+            }
+        }
+    }
+    .overlay {
+        &:before {
+            background-color: fade(@white, 70%);
+            opacity: 1;
+        }
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .section-title,
+        .section-title-heading {
+            color: @gray-dark;
+        }
+        .section-title-more {
+            color: @gray-darker;
+        }
+        // .fact-icon,
+        // .fact-text p {
+        //     color: darken(@brand-primary, 5%);
+        // }
+        .arrow-left,
+        .arrow-right {
+            background-color: fade(@white, 15%);
+            border-color: fade(@gray-darker, 20%);
+            &:before {
+                border-color: @gray-dark;
+            }
+        }
+    }
+    .home-section {
+        &.overlay, .overlay {
+            &:before {
+                background-color: fade(@white, 70%);
+                opacity: 1;
+            }
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            color: @gray-dark;
+        }
+        .arrow-left,
+        .arrow-right {
+            background-color: fade(@white, 15%);
+            border-color: fade(@gray-darker, 20%);
+            &:before {
+                border-color: @gray-dark;
+            }
+        }
+        .carousel {
+            .dotstyle-fall {
+                li, div {
+                    &:after {
+                        background: fade(@gray-dark, 40%);
+                    }
+                    a,
+                    span {
+                        background: fade(@gray-dark, 40%);
+                    }
+                    & a:focus,
+                    &.active a,
+                    & span:focus,
+                    &.active span {
+                        background: fade(@gray-dark, 100%);
+                    }
+                    &.active,
+                    &.current {
+                        background: 0;
+                        &:after {
+                            background: fade(@gray-dark, 100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .as-overlay .as-background:after {
+        background-color: fade(@white, 70%);
+    }
+    &.equal {
+        .home-section {
+            &.overlay, .overlay {
+                &:before {
+                    background-color: fade(@white, 90%);
+                }
+            }
+            // .fss {
+            //     &.overlay {
+            //         &:before {
+            //             background-color: rgba(255, 255, 255, 1);
+            //         }
+            //     }
+            // }
+        }
+        .as-overlay .as-background:after {
+            background-color: fade(@white, 90%);
+        }
+    }
+    // .play-vid-button {
+    //     color: @gray-dark;
+    //     &:hover {
+    //         color: @gray-dark;
+    //     }
+    // }
+    .as-indicator {
+        background: fade(@gray-dark, 40%);
+    }
+    .as-load-bar {
+        background: @gray-dark;
+    }
+    .page-header {
+        .breadcrumb {
+            background: transparent;
+            li {
+                color: fade(@gray-dark, 70%);
+            }
+            >li+li:before {
+                color: @gray-dark;
+            }
+            a {
+                color: @gray-dark;
+                &:hover {
+                    color: fade(@gray-dark, 70%);
+                }
+            }
+        }
+    }
+    .page-header-title-left {
+        color: @gray-dark;
+    }
+    // .no-touch {
+    //     .dots-over {
+    //         .dotstyle-fall {
+    //             li, div {
+    //                 &:hover span, &:hover a {
+    //                     background: fade(@carousel-elements-color, 80%);
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    .scroll-down-arrow {
+        a {
+            color: @gray-dark;
+        }
+    }
+    .testimo-item {
+        p {
+            color: @gray-dark;
+        }
+        footer {
+            color: darken(@brand-primary, 10%);
+            // color:fade( @white, 50%);
+        }
+        cite {
+            color: @gray-darker;
+        }
+    }
+}
+
+// .dark-text {
+//     .overlay {
+//         &:before {
+//             background-color: fade(@gray-darker, 80%);
+//             opacity: .7;
+//         }
+//     }
+//     .home-section {
+//         &.overlay, .overlay {
+//             &:before {
+//                 background-color: fade(@gray-darker, 20%);
+//             }
+//         }
+//     }
+// }
+// /* 
+//  Dense Overlay
+//  -------------------------
+//  */
+// .dense {
+//     .overlay {
+//         &:before {
+//             opacity: 1 !important;
+//         }
+//     }
+//     .fss {
+//         opacity: .8
+//     }
+//     .as-overlay .as-background:after {
+//         opacity: 1 !important;
+//     }
+// }
+.section-text {
+    color: darken(@gray, 20%);
+}
+/* 
+ Alternate Navbars
+ -------------------------
+ */
+/* Default Navbar */
+
+.navbar-default {
+    &.ripple-group-parent {
+        .ink {
+            background: darken(fade(@white, 50%), 20%);
+        }
+    }
+    background-color: @navbar-default-bg;
+    border-color: @navbar-default-border;
+    .navbar-brand {
+        .text-color(@navbar-default-brand-color);
+        &:focus, &:hover {
+            color: @navbar-default-brand-hover-color;
+            background-color: @navbar-default-brand-hover-bg;
+        }
+    }
+    .logo-svg-path-navbar {
+        fill: @navbar-default-brand-color;
+        transition: fill .27s ease-out;
+    }
+    .navbar-text {
+        color: @navbar-default-color;
+    }
+    .navbar-nav {
+        > li > a {
+            .text-color(@navbar-default-link-color);
+            border-top: 1px solid rgba(0, 0, 0, .15);
+            &:focus, &:hover {
+                .text-color(@navbar-default-link-color);
+                background-color: @navbar-default-link-hover-bg;
+            }
+        }
+        > li:first-child > a {
+            border-top: 0;
+        }
+        > .active > a {
+            &, &:hover, &:focus {
+                color: @navbar-default-link-active-color;
+                background-color: @navbar-default-link-active-bg;
+            }
+        }
+        @media (min-width: 768px) {
+            > li > a {
+                border-top: 0;
+                &:focus, &:hover {
+                    background-color: transparent;
+                }
+            }
+            > .active > a {
+                &, &:hover, &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    .navbar-toggle {
+        border-color: @navbar-default-toggle-border-color;
+        &:hover {
+            background-color: @navbar-default-toggle-hover-bg;
+        }
+        &:focus {
+            background-color: @navbar-default-toggle-hover-bg;
+        }
+        .icon-bar {
+            background-color: @navbar-default-toggle-icon-bar-bg;
+        }
+    }
+}
+/* Navigation links falling effect */
+
+.cl-effect-5 {
+    > li {
+        > a {
+            span[data-hover] {
+                &:before {
+                    color: @navbar-default-link-hover-color;
+                }
+            }
+        }
+    }
+}
+/* Dark Navbar */
+
+.navbar-dark {
+    .scroll-progressbar {
+        background: fade(@white, 2%);
+    }
+    &.ripple-group-parent {
+        .ink {
+            background: fade(@white, 60%);
+        }
+    }
+    background-color: @navbar-dark-bg;
+    border-color: @navbar-dark-border;
+    .navbar-brand {
+        .text-color(@navbar-dark-brand-color);
+        &:focus, &:hover {
+            color: @navbar-dark-brand-hover-color;
+            background-color: @navbar-dark-brand-hover-bg;
+        }
+    }
+    .logo-svg-path-navbar {
+        fill: @navbar-dark-brand-color;
+        transition: fill .27s ease-out;
+    }
+    .navbar-text {
+        color: @navbar-dark-color;
+    }
+    .navbar-nav {
+        > li > a {
+            .text-color(@navbar-dark-link-color);
+            border-top: 1px solid rgba(255, 255, 255, .15);
+            &:focus, &:hover {
+                .text-color(@navbar-dark-link-color);
+                background-color: @navbar-dark-link-hover-bg;
+            }
+        }
+        > li:first-child > a {
+            border-top: 0;
+        }
+        > .active > a {
+            &, &:hover, &:focus {
+                color: @navbar-dark-link-active-color;
+                background-color: @navbar-dark-link-active-bg;
+            }
+        }
+        @media (min-width: 768px) {
+            > li > a {
+                border-top: 0;
+                &:focus, &:hover {
+                    background-color: transparent;
+                }
+            }
+            > .active > a {
+                &, &:hover, &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    .navbar-toggle {
+        border-color: @navbar-dark-toggle-border-color;
+        &:hover {
+            background-color: @navbar-dark-toggle-hover-bg;
+        }
+        &:focus {
+            background-color: @navbar-dark-toggle-hover-bg;
+        }
+        .icon-bar {
+            background-color: @navbar-dark-toggle-icon-bar-bg;
+        }
+    }
+    /* Navigation links falling effect */
+    
+    .cl-effect-5 {
+        > li {
+            > a {
+                span[data-hover] {
+                    &:before {
+                        color: @navbar-dark-link-hover-color;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Big Transparant Navbar */
+
+.navbar-transparent,
+.navbar-elastic {
+    padding-top: @navbar-padding-vertical;
+    padding-bottom: @navbar-padding-vertical;
+    .navbar-logo {
+        // padding: (@navbar-padding-vertical / 1.1) 0 (@navbar-padding-vertical / 1.1) 0;
+    }
+}
+
+.navbar-transparent {
+    background-color: transparent;
+    // box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0);
+    border-bottom: 1px solid transparent;
+    .scroll-progressbar {
+        background: transparent;
+    }
+    .navbar-brand p {
+        .text-color(@white);
+        // padding: (@navbar-padding-vertical / 1.1) 0 (@navbar-padding-vertical / 1.1) 10px;
+        // font-size: 22px;
+        // opacity: 0;
+    }
+    .logo-svg-path-navbar {
+        fill: @white;
+    }
+    .navbar-text {
+        color: fade(@white, 70%);
+    }
+    .navbar-collapse {
+        background-color: @navbar-default-bg;
+    }
+    .navbar-toggle {
+        .icon-bar {
+            background-color: @white;
+        }
+    }
+}
+
+.navbar-transparent.navbar-dark {
+    .navbar-collapse {
+        background-color: @navbar-dark-bg;
+    }
+}
+
+.navbar-transparent {
+    @media (min-width: 768px) {
+        // background: transparent;
+        // box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0);
+        // border-bottom: 1px solid transparent;
+        &.ripple-group-parent {
+            .ink {
+                background: fade(@white, 50%);
+            }
+        }
+        // .navbar-brand p {
+        //     .text-color(@white);
+        //     // padding: (@navbar-padding-vertical / 1.1) 0 (@navbar-padding-vertical / 1.1) 10px;
+        //     // font-size: 22px;
+        //     // opacity: 0;
+        // }
+        // .logo-svg-path-navbar {
+        //     // fill:@white;
+        // }
+        // .navbar-text {
+        //     color: fade(@white, 70%);
+        // }
+        &.navbar-dark .navbar-collapse,
+        .navbar-collapse {
+            background-color: transparent;
+        }
+        .navbar-nav {
+            > li > a {
+                .text-color(fade(@white, 70%));
+                &:hover {
+                    color: @white;
+                }
+                &:focus {
+                    color: fade(@white, 70%);
+                }
+            }
+            > .active > a {
+                &, &:hover, &:focus {
+                    color: @white;
+                }
+            }
+        }
+        .cl-effect-5 > li > a span[data-hover]:before {
+            color: @white;
+        }
+    }
+}
+
+// /* 
+//  Blurry Navbar
+//  -------------------------
+//  */
+// .navbar-blurry {
+//     height: 60px;
+//     background-color: rgba(0, 0, 0, 0.15);
+//     border-color: transparent;
+// }
+// .colored-logo {
+//     .logo-svg-path-navbar {
+//         fill: @brand-primary !important;
+//     }
+// }
+/* 
+ Facts Section
+ -------------------------
+ */
+
+.facts-section {
+    background: @gray-lighter;
+}
+
+.fact-icon,
+.fact-text p {
+    color: @brand-primary;
+}
+
+.fact-number {
+    // color: @white;
+}
+
+// .team-items {
+//     .dotstyle-fillup {
+//         li, div {
+//             a, span {
+//                 background: transparent;
+//                 // border: 1px solid ;
+//                 box-shadow: inset 0 0 0 1px lighten(@gray-dark, 10%);
+//                 &:after {
+//                     background-color: lighten(@gray-dark, 10%);
+//                     box-shadow: none;
+//                 }
+//                 // &:hover {
+//                 //     a, span {
+//                 //        background: transparent;
+//                 //     }
+//                 // }
+//             }
+//         }
+//     }
+// }
+/* 
+ Team Section
+ -------------------------
+ */
+
+.team-item-info {
+    background: rgba(255, 255, 255, 0.7);
+    .skillbar {
+        background: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.team-item-name {
+    // background: @white;
+    small {
+        color: @brand-primary;
+    }
+    span {
+        color: @brand-primary;
+    }
+}
+
+.team-item-social,
+// .blog-article-author-social,
+.work-social {
+    a {
+        color: @gray;
+        // text-shadow: 0 1px 0 #000;
+        &:hover {
+            color: @brand-primary;
+        }
+    }
+}
+
+.team-item-social {
+    li {
+        background: rgba(255, 255, 255, 0.2);
+    }
+}
+
+// .blog-article-author-social,
+.work-social {
+    li {
+        background: fade(@gray, 7%);
+    }
+}
+/* 
+ Works Section
+ -------------------------
+ */
+
+// .portfolio-section {}
+.portfolio-filters {
+    background: @gray-lighter;
+    border: 1px solid @gray-lighter;
+    .btn {
+        color: @gray-darker;
+        &::before, &::after {
+            background: @gray-lighter;
+        }
+    }
+    .btn-seperator {
+        color: @gray-lighter;
+    }
+    .ink {
+        background: lighten(@brand-primary, 25%);
+    }
+    .btn-icon {
+        color: @brand-primary
+    }
+}
+
+.portfolio-section-light {
+    .portfolio-filters {
+        // background: @gray-lighter;
+        // border: 1px solid @gray-lighter;
+        // .btn {
+        //     color: @gray-darker;
+        //     &::before, &::after {
+        //         background: @gray-lighter;
+        //     }
+        // }
+        // .btn-seperator {
+        //     color: @gray-lighter;
+        // }
+        .ink {
+            background: @white;
+        }
+        // .btn-icon {
+        //     color: @brand-primary
+        // }
+    }
+}
+
+.portfolio-item-img:after,
+.video-work:after {
+    background: fade(@white, 90%);
+}
+
+.colored-mask {
+    .portfolio-item-img:after, .video-work:after {
+        background: fade(@brand-primary, 90%);
+    }
+}
+
+.portfolio-item-detail {
+    a {
+        color: @body-color;
+    }
+}
+/* 
+ Project Order
+ -------------------------
+ */
+
+.project-order-section {
+    background: @gray-dark;
+}
+
+.project-order-section-light,
+.portfolio-section-light {
+    background: @gray-lighter;
+}
+
+// .button-variant(@color;
+// @background;
+// @border;
+// @hover-color;
+// @hover-background;
+// @active-background;
+// @hover-border, @ripple-color);
+// .btn-proj-order {
+//     .button-variant(@brand-primary;
+//     transparent;
+//     @brand-primary;
+//     @brand-primary;
+//     @gray-darker;
+//     @gray-darker;
+//     @gray-dark;
+//     fade(@white, 10%));
+// }
+// .btn-split.btn-proj-order {
+//     background: @brand-primary;
+//     &:hover {
+//         background: @gray-darker;
+//     }
+//     &::before,
+//     &::after {
+//         background: @gray-dark;
+//         color: @brand-primary;
+//     }
+// }
+/* 
+ Services Section
+ -------------------------
+ */
+
+// .services-section {
+//     // background: @gray-lighter;
+// }
+.services-section-item-icon {
+    color: @brand-primary;
+}
+
+.services-section-item-text {
+    color: lighten(@body-color, 15%);
+}
+/* 
+ Skills Section
+ -------------------------
+ */
+
+.skillbar-theme(@brand-primary);
+// .light {
+//     .skillbar-theme(darken(@brand-primary, 8%));
+// }
+// .team-item {
+//     .skillbar-theme(darken(@brand-primary, 8%));
+// }
+/* 
+ Process Section
+ -------------------------
+ */
+
+.process-labels {
+    i {
+        color: @process-secondary-color;
+    }
+    .icon-shade {
+        color: @process-primary-color;
+    }
+    span {
+        color: @process-secondary-color;
+        &:before {
+            color: @body-color;
+        }
+    }
+}
+/* Process Line */
+
+.line-process-parent {
+    background-color: lighten(@process-secondary-color, 12%);
+}
+
+.line-process {
+    background: @process-primary-color;
+}
+/* Process Dots */
+
+.line-process-mood {
+    .owl-dot {
+        span {
+            background-color: @process-secondary-color;
+            // box-shadow: 1px 1px 1px 1px @process-secondary-color inset;
+            &:after {
+                background-color: @process-primary-color;
+            }
+        }
+        &.active {
+            // &:before {
+            //     content: "";
+            //     position: absolute;
+            //     border: 1px solid darken(@process-primary-color, 15%);
+            //     height: 21px;
+            //     width: 21px;
+            //     transform: rotate(45deg);
+            //     left: -4px;
+            //     top: -4px;
+            // }
+            span {
+                background: @white;
+                &:after {
+                    // box-shadow: 1px 1px 1px 1px darken(@process-primary-color, 20%) inset;
+                }
+            }
+        }
+        &:hover {
+            span {
+                // background: @process-secondary-color;
+            }
+        }
+        .process-active-dot {
+            span {
+                background-color: @process-primary-color;
+            }
+            &:after {
+                // box-shadow: 1px 1px 1px 1px darken(@process-primary-color, 20%) inset;
+            }
+        }
+    }
+}
+
+// .process-item-img {
+//     i {
+//         color: @gray-lighter;
+//     }
+// }
+.process {
+    .arrow-left, .arrow-right {
+        background: fade(@white, 10%);
+        border: 1px solid fade(@gray-dark, 10%);
+        &:before {
+            border-color: @gray-dark;
+        }
+    }
+}
+/* 
+ Testimonials Section
+ -------------------------
+ */
+
+.testimo-item {
+    footer {
+        // color:fade( @white, 50%);
+        color: @brand-primary;
+    }
+    cite {
+        color: @white;
+    }
+}
+
+// .testimo-item {
+//     blockquote {
+//         // p {
+//         //     span {
+//         //         color: @brand-primary;
+//         //     }
+//         // }
+//     }
+// }
+// .testimonials {
+//     .owl-dot {
+//         // // border: @carousel-arriow-border-width solid @white;
+//         // border-radius: 0;
+//         // // transform: rotate(45deg);
+//         // background: transparent;
+//         // transition: background .27s ease;
+//     }
+//     .owl-dot.active {
+//         // background: @white;
+//     }
+// }
+.client-logos {
+    background: @gray-lighter;
+    i {
+        color: @gray-mid-light;
+    }
+}
+/* 
+ Pricing Section
+ -------------------------
+ */
+
+// .pricing-section {
+//     // background: @gray-lighter;
+// }
+.pricing-table {
+    border-color: @gray-lighter;
+    background: @white;
+}
+
+.pricing-header {
+    background-color: @gray;
+    color: @white;
+    h4 {
+        color: @white;
+    }
+}
+
+.popular .pricing-header {
+    background-color: @brand-primary;
+}
+
+.select {
+    .icon {
+        color: @white;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .pricing-header {
+        color: @gray;
+        background-color: transparent;
+        h4 {
+            color: @gray;
+        }
+    }
+    .popular .pricing-header {
+        color: @brand-primary;
+        background-color: transparent;
+        h4 {
+            color: @brand-primary;
+        }
+    }
+    .currency,
+    .duration {
+        color: @gray-mid-light;
+    }
+    .popular .currency,
+    .popular .duration {
+        color: @brand-primary;
+    }
+    .pricing-features {
+        li {
+            // &:nth-of-type(2n+1) {
+            border-top: 1px solid @gray-lighter;
+            // background: @gray-lighter;
+            // }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .pricing-section {
+        .btn-split.btn-default {
+            // border-width: 1px;
+            border-color: @white;
+            background-color: @white;
+            // .ink {
+            //     // background: @gray;
+            // }
+            &:hover {
+                background-color: @gray-lighter;
+            }
+            &:after,
+            &:before {
+                background-color: @gray;
+                color: @white;
+            }
+        }
+    }
+    // .no-touch .select:hover {
+    //     background-color: darken(@gray, 10%);
+    // }
+    .popular {
+        .pricing-table {
+            // border-color: fade(@brand-primary, 30%);
+            box-shadow: 0 0 6px 1px @gray-lighter;
+        }
+        .btn-split.btn-default {
+            &:after, &:before {
+                background-color: @brand-primary;
+            }
+        }
+    }
+    // .no-touch .popular .select:hover {
+    //     background-color: darken(@brand-primary, 10%);
+    // }
+    // .has-margins .select {
+    //     display: block;
+    //     padding: 1.7em 0;
+    //     border-radius: 0 0 4px 4px;
+    // }
+}
+/* 
+ Blog Section
+ -------------------------
+ */
+
+.blog-post-preview-text {
+    color: @gray-dark;
+}
+
+// .blog-section {
+//     article {}
+// }
+.blog-post-preview-link:hover {
+    // .blog-post-preview-img {
+    //     // img {
+    //     //     // transform: scale(1);
+    //     // }
+    //     // &:after {
+    //     // background-color: @brand-primary;
+    //     // opacity: .9;
+    //     // }
+    // }
+    .blog-post-preview-title {
+        color: @brand-primary;
+    }
+    // .blog-post-preview-text,
+    // .blog-post-preview-date {
+    //     // opacity: 1;
+    //     // transform: scale(1) translate3d(0, 0, 0);
+    //     // transition: opacity 0.15s, transform 0.25s;
+    // }
+}
+
+// .blog-section-more {
+//     &:hover {
+//         // background: @gray-lighter;
+//     }
+// }
+// .blog-post-preview-title {
+//     // color: @body-color;
+//     // &:hover, &:focus {
+//     //     color: @brand-primary;
+//     // }
+// }
+// .blog-post-preview-inner {
+//     // background: #fff;
+// }
+// .blog-post-preview-detail {
+//     // color: @gray-mid-light;
+//     // transition: color .27s ease-out;
+//     a {
+//         color: @gray-mid-light;
+//         &:hover {
+//             color: @brand-primary;
+//         }
+//     }
+// }
+// .blog-post-preview-text {
+//     color: @gray;
+// }
+// .blog-post-preview-more {
+//     // background: #fff;
+//     a {
+//         color: @gray;
+//         &:hover {}
+//     }
+// }
+/* 
+ Contact Section
+ -------------------------
+ */
+
+.contact-section {
+    background: @gray-lighter;
+}
+
+.contact-item i {
+    color: @brand-primary;
+}
+
+.input-field {
+    border-bottom: 1px solid @gray-light;
+    transition: border-color 0.25s;
+    &:focus {
+        border: 1px solid @gray;
+    }
+}
+
+;
+.textarea {
+    border-color: @gray-light;
+}
+
+.success {
+    color: darken(rgb(15, 160, 131), 30%);
+    background-color: fade(lighten(rgb(15, 160, 131), 10%), 70%);
+}
+
+.error {
+    color: darken(rgb(215, 51, 58), 30%);
+    background-color: lighten(rgb(215, 51, 58), 10%);
+}
+/* 
+ Google Map
+ -------------------------
+ */
+/* Map Mask */
+
+.map-mask {
+    background: @gray-lighter;
+}
+
+.no-touch .map-mask {
+    &:hover {
+        background: fade( @gray-lighter, 65%);
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+            .map-opener {
+                background: @gray-darker -webkit-gradient(linear, left top, right top, from(@gray-darker), to(@gray-darker), color-stop(0.5, #fff)) 0 0 no-repeat;
+                -webkit-background-size: 125px;
+                color: rgba(255, 255, 255, 0.1);
+                -webkit-background-clip: text;
+                -webkit-animation-name: shine;
+                -webkit-animation-duration: 1.2s;
+                -webkit-animation-iteration-count: infinite;
+            }
+        }
+    }
+}
+
+// .map-opener i {
+//     color: @brand-primary;
+// }
+/* Map Controls */
+
+#map-canvas {
+    background-color: @gray-lighter;
+}
+
+#map-zoom-in,
+#map-zoom-out {
+    background-color: @gray;
+}
+
+.no-touch {
+    #map-zoom-in, #map-zoom-out {
+        &:hover {
+            background-color: fade(@gray, 80%);
+        }
+    }
+}
+/* Map Mask */
+
+.footer-section {
+    background: @gray-dark;
+}
+
+.footer-logo {
+    p {
+        color: @gray-light;
+    }
+}
+/* 
+ Footer Section
+ -------------------------
+ */
+
+.logo-svg-path {
+    fill: @gray-mid-light;
+}
+
+.footer-social {
+    a {
+        color: @gray-mid-light;
+        background: fade(@gray, 7%);
+        &:hover {
+            color: @gray-darker;
+        }
+    }
+}
+/* Go Top Button */
+
+.circle1,
+.circle2 {
+    background: @gray-dark;
+}
+
+.circle1 {
+    &:after {
+        background: @gray-dark;
+    }
+}
+
+.circle2 {
+    &:after {
+        background: @gray-dark;
+    }
+}
+
+.square {
+    background: @gray-darker;
+    z-index: 2;
+    span {
+        border-top: 1px solid @gray;
+        border-left: 1px solid @gray;
+    }
+}
+
+.rectangle {
+    background: @gray-darker;
+}
+
+.footer-bottom {
+    background: @gray-darker;
+}
+
+.footer-bottom-text {
+        color: @gray-mid-light;
+}
+/* Light Foter */
+
+.light-footer {
+    &.footer-section {
+        background: @gray-lighter;
+    }
+    .footer-logo {
+        p {
+            color: @gray;
+        }
+    }
+    .logo-svg-path {
+        fill: @gray;
+    }
+    .footer-social {
+        a {
+            color: @gray;
+            &:hover {
+                color: @gray-mid-light;
+            }
+        }
+    }
+    /* Go Top Button */
+    
+    .circle1,
+    .circle2 {
+        background: @gray-lighter;
+    }
+    .circle1 {
+        &:after {
+            background: @gray-lighter;
+        }
+    }
+    .circle2 {
+        &:after {
+            background: @gray-lighter;
+        }
+    }
+    .square {
+        background: @gray-light;
+        z-index: 2;
+        span {
+            border-top: 1px solid @gray;
+            border-left: 1px solid @gray;
+        }
+    }
+    .rectangle {
+        background: @gray-light;
+    }
+    .footer-bottom {
+        background: @gray-light;
+    }
+    .footer-bottom-text {
+            color: @gray;
+    }
+}
+/* 
+ Blog & Works Page Styles
+ -------------------------
+ */
+/* 
+ Page Header
+ ----------
+ */
+
+.page-header {
+    .breadcrumb {
+        background: transparent;
+        li {
+            color: fade(@white, 70%);
+        }
+        >li+li:before {
+            color: @white;
+        }
+        a {
+            color: @white;
+            &:hover {
+                color: fade(@white, 70%);
+            }
+        }
+    }
+    .carousel-control {
+        i {
+            background: rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+.page-header-title-left {
+    color: @white;
+}
+/* Blog Pages Styles */
+
+.blog-item-header {
+    .blog-item-title {
+        color: @gray-darker;
+    }
+    &:hover {
+        .blog-item-title {
+            color: @brand-primary;
+        }
+    }
+}
+
+.blog-item-detail {
+    color: @gray-mid-light;
+    a {
+        color: @gray-mid-light;
+        &:hover {
+            color: @brand-primary;
+        }
+    }
+}
+
+.blog-item-body {
+    blockquote {
+        border-left: 3px solid @brand-primary;
+    }
+}
+.article-nav-link {
+    color: @body-color;
+    &:last-child {
+        border-left: 1px solid darken(@gray-lighter, 3%);
+    }
+    &:hover {
+        color: @brand-primary;
+        background: @gray-lighter;
+    }
+}
+.widget-title {
+    border-color: @gray-light;
+    color: @gray-darker;
+}
+
+.widget-body {
+        a {
+        color: @gray-dark;
+        &:hover {
+            color: @brand-primary;
+        }
+    }
+}
+
+.search-button {
+    background: transparent;
+    color: @gray-mid-light;
+}
+
+.widget-posts-recent {
+    ul {
+        li {
+            border-color: @gray-lighter;
+        }
+    }
+}
+
+.widget-categories {
+    li {
+        a {
+            border-color: transparent;
+        }
+        small {
+            color: @gray;
+        }
+    }
+}
+
+.tags {
+    a {
+        color: @body-color;
+        border-color: @gray-light;
+        // color: @gray-mid-light;
+        &:hover {
+            border-color: @brand-primary;
+            // color: @gray-dark;
+        }
+    }
+}
+
+.default-tabs {
+    border-color: @gray-light;
+    > li > a {
+        color: @gray-light;
+        &:hover {
+            background-color: @white;
+        }
+    }
+    li.active a {
+        color: @gray-dark;
+        background-color: @white;
+        &:hover, &:focus {
+            background-color: @white;
+        }
+    }
+}
+
+.widget-comments li {
+    border-color: @gray-lighter;
+}
+
+// .blog-page-title {
+//     border-color: @gray-dark;
+// }
+.blog-article-author {
+    background: @gray-lighter;
+    border-color: @gray-lighter;
+}
+
+.blog-article-author-img {
+    border-color: @gray-light;
+    a {
+        color: @gray;
+    }
+    &:hover {
+        img {
+            opacity: .8;
+        }
+        a {
+            color: @gray-mid-light;
+        }
+    }
+}
+
+li.comment-item {
+    border-color: darken(@gray-lighter, 3%);
+}
+
+.comment-item-data {
+    color: @gray-mid-light;
+}
+
+.comment-author {
+    a {
+        color: @gray;
+    }
+}
+
+.comment-avatar {
+    color: @white;
+    background: @gray-light;
+}
+
+.pagination a {
+    border-color: @gray-light;
+    color: @gray;
+    &:hover {
+        border-color: @gray;
+        color: @gray-dark;
+    }
+    &.active,
+    &.active:hover {
+        border-color: @gray-dark;
+        color: @gray-dark;
+    }
+}
+
+.pagination .fa,
+.pagination .icon {
+    line-height: 21px;
+    font-size: 18px;
+}
+
+.pagination a.no-active,
+.pagination a.no-active:hover {
+    border-color: transparent;
+    color: @gray-mid-light;
+    cursor: default;
+}
+/* 
+ Works Pages Styles
+ ----------
+ */
+/* Works Navigation */
+
+.portfolio-nav-default {
+    &.affix {
+        background: @navbar-default-bg;
+        border-bottom: 1px solid @gray-lighter;
+        .carousel-control {
+            &:hover {
+                i {
+                    background: rgba(0, 0, 0, 0.05);
+                }
+            }
+        }
+        .arrow-left {
+            border-right: 1px solid @gray-lighter;
+            background: transparent;
+        }
+        .arrow-right {
+            border-left: 1px solid @gray-lighter;
+            background: transparent;
+        }
+        .arrow-left:before,
+        .arrow-right:before {
+            border-color: @gray-dark;
+        }
+        .all-works {
+            color: @body-color;
+            &:hover, &:focus {
+                color: @body-color;
+                background: rgba(0, 0, 0, 0.05);
+            }
+        }
+    }
+}
+
+.portfolio-nav-dark {
+    &.affix {
+        background-color: @navbar-dark-bg;
+        border-bottom: 1px solid @gray-dark;
+        .carousel-control {
+            &:hover {
+                i {
+                    background: rgba(255, 255, 255, 0.05);
+                }
+            }
+        }
+        .arrow-left {
+            border-right: 1px solid @gray-dark;
+            background: transparent;
+        }
+        .arrow-right {
+            border-left: 1px solid @gray-dark;
+            background: transparent;
+        }
+        .arrow-left:before,
+        .arrow-right:before {
+            border-color: @white;
+        }
+        .all-works {
+            color: @white;
+            &:hover, &:focus {
+                color: @white;
+                background: rgba(255, 255, 255, 0.05);
+            }
+        }
+    }
+}
+
+.work-navigation {
+    background: @white;
+    a {
+        background: @white;
+        &:hover {
+            color: @gray-darker;
+            background: @gray-lighter;
+        }
+        &,
+        &:visited {
+            color: @gray;
+        }
+    }
+}
+
+// .work-detail {
+//     font-weight: 400;
+//     border-color: @gray-light;
+// }
+.work-detail {
+    color: @gray;
+}

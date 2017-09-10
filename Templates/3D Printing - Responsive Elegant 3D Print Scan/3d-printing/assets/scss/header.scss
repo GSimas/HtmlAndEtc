@@ -1,0 +1,495 @@
+/* ==========================================================================
+   All Style Header
+========================================================================== */
+/* Align items center & stretch for header navigation */
+@include breakpoint-min(992px){	
+	.align-items-center-stretch, .align-items-center-stretch > div {
+		display: flex !important;
+		align-items: center;
+		align-self: stretch;
+		flex-flow: row wrap;
+	}
+	.align-items-center-stretch .main-navigation, .align-items-center-stretch .main-navigation > nav > div, .align-items-center-stretch .main-navigation > div, .align-items-center-stretch .main-navigation .menu-main-menu, .align-items-center-stretch .main-navigation .menu-main-menu > li, .align-items-center-stretch .main-navigation .menu-main-menu > ul, .align-items-center-stretch .main-navigation .menu-main-menu > ul > li {
+		display: flex !important;
+		align-items: center;
+		align-self: stretch;
+	}
+}
+
+#zo-header-top {
+    .header-top-contact{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style-type: none;
+            display: inline-block;
+            &.contact-email:before {
+                content: "|";
+                color: #fff;
+                margin-right: 15px;
+            }
+            a{
+                color: #fff;
+            }
+        }
+
+    }
+    .header-top-navigation{
+        li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 0 10px;
+        }
+    }
+	.header-top-social{
+        margin: 0px;
+        padding: 0px;
+        li{
+            list-style: none;
+            display: inline-block;
+            width: 45px;
+            text-align: center;
+            &:hover {
+                i {
+                    @include animation(0.3s ease 0s normal forwards 1 running toTopFromBottom);
+                }
+            }
+            &.facebook:hover {
+                background: #5d82d1;
+            }
+            &.twitter:hover {
+                background: #40bff5;
+            }
+            &.google:hover {
+                background: #eb5e4c;
+            }
+            &.pinterest:hover {
+                background: #e13138;
+            }
+            &.vimeo:hover {
+                background: #35c6ea;
+            }
+            &.linkedin:hover {
+                background: #238cc8;
+            }
+            &.dribbble:hover {
+                background: #f7659c;
+            }
+            &.youtube:hover {
+                background: #ef4e41;
+            }
+            &.rss:hover {
+                background: #faa33d;
+            }
+            a {
+                font-size: 15px;
+                line-height: 45px;
+                display: block;
+                color:#fff;
+            }
+        }
+    }
+}
+#zo-header {
+    .zo-header-main{
+        position: relative;
+        .zo-header-logo{
+            max-width: 100%;
+            @include breakpoint-max(1200px){
+                margin-left: 15px;
+            }
+        }
+        .zo-sticky-logo{
+            display: none;
+        }
+        .zo-header-secondary{
+            max-width: 100%;
+        }
+		.zo-header-navigation-left{
+			float: left;
+		}
+		.zo-header-navigation-right{
+			float: right;
+		}
+    }
+	width: 100%;
+	z-index: 999;
+	top: 0; 
+	@include transition(all 420ms linear 0ms);
+	&.no-sticky {
+		position: relative;
+	}
+	&.header-default {
+		position: static;
+		&.header-fixed {
+			position: fixed;
+			@include animation(0.5s ease 0s normal forwards 1 running toTopFromBottom2);
+		}
+	}
+	> .container {
+		position: relative;
+		z-index: 99;
+	}
+}
+
+#zo-header.header-fixed{
+    .zo-sticky-logo{
+        display: block;
+    }
+    #zo-header-top{
+        display: none;
+    }
+}
+#zo-header-logo {
+	img {
+		@include transition(all 500ms ease 0ms);
+		max-height: 200px;
+	}
+	span {
+		padding-left: 10px;
+		font-size: 12px;
+		display: inline-block;
+	}
+}
+
+/*** Admin Bar ***/
+.admin-bar {
+    #zo-header {
+        top: 32px;
+        &.no-sticky {
+            top: 0;
+        }
+    }
+}
+/*** End Admin Bar ***/
+
+
+/* Cart and Search
+==========================================================*/
+.widget_cart_search_wrap {
+    text-align: right;	
+	@include breakpoint-max(992px){
+		margin-right: 60px;
+	}
+	@include breakpoint-max(768px) {
+		margin-right: 55px;
+	}
+    .widget_cart_search_wrap_item {
+		@include breakpoint-min(992px){
+			padding-left: 15px;
+			float: left;
+		}
+		@include breakpoint-max(992px){
+			display: inline;
+		}
+        > a.icon {
+            display: inline-block;
+            width: 35px;
+            text-align: center;
+            &:hover, &.active {
+				i {
+					@include animation(0.3s ease 0s normal forwards 1 running toTopFromBottom);
+				}
+            }
+            &.icon_cart_wrap {
+                position: relative;
+                .cart_total {
+                    position: absolute;
+                    color: #fff;
+                    background-color: $primary_color;
+                    display: block;
+                    font-size: 11px;
+                    height: 18px;
+                    line-height: 18px;
+                    right: -5px;
+                    text-align: center;
+                    top: 50%;
+                    width: 18px;
+                    @include border-radius(100%);
+					@include transform(translateY(calc(-50% - 15px)));
+                }
+            }
+        }
+        .shopping_cart_dropdown,
+        .widget_searchform_content {
+            height: 0;
+            overflow: hidden;
+            opacity: 0;
+            @include transition(all 400ms);
+            &.active {
+                height: auto;
+                overflow: hidden;
+                opacity: 1;
+				z-index: 100;
+            }
+        }
+        .shopping_cart_dropdown {
+            width: 360px;
+            position: absolute;
+            background-color: #3e3e3e;
+            top: 100%;
+            right: 16px;
+            @media screen and (max-width: 768px) {
+                right: 0;
+                width: 100%;
+            }
+            .shopping_cart_dropdown_inner {
+                padding: 20px;
+                line-height: 50px;
+                .cart_list {
+                    list-style: none inside;
+                    margin: 0;
+                    padding: 0;
+                    li.cart-list {
+                        border-bottom: 1px solid #393939;
+                        color: #FFF;
+                        overflow: hidden;
+                        padding: 20px 0;
+                        line-height: normal;
+                        &.empty {
+                            text-align: center;
+                        }
+                        > a {
+                            float: left;
+							width: 110px;
+                        }
+                        .cart-list-info {
+                            padding-left: 130px;
+                            text-align: left;
+                            .title {
+                                color: #FFF;
+                                font-size: 13px;
+								font-weight: 400;
+                                padding: 0 0 10px;
+                                margin: 0;
+                                text-transform: uppercase;
+                                line-height: normal;
+                            }
+                            .amount {
+                                color: $primary_color;
+                                display: block;
+                                font-style: italic;
+                                padding-bottom: 10px;
+                                padding-right: 4px;
+                                @extend .font-second;
+                            }
+                            .quantity {
+                                display: block;
+                                color: #b8b7b7;
+                                text-transform: uppercase;
+                                padding-bottom: 10px;
+                                padding-right: 4px;
+                                a {
+                                    float: right;
+									text-align: right;
+									margin-left: 15px;
+                                    color: red;
+                                }
+                            }
+                        }
+                    }
+                }
+                .cart-total {
+                    .total {
+                        font-size: 16px;
+                        color: #FFF;
+                        display: block;
+                        text-align: center;
+                        text-transform: uppercase;
+                        .amount {
+                            font-size: 36px;
+                            padding-left: 10px;
+                            color: $primary_color;
+                        }
+                    }
+                    .btn {
+                        width: 100%;
+                        text-align: center;
+                        color: #FFF !important;
+                        border: 0 !important;
+						@include border-radius(2px);
+                        &.btn-checkout{
+                            padding-top: 8px !important;
+                            padding-bottom: 8px !important;
+                        }
+                        &.btn-checkout:hover {
+                            @include background-opacity($primary_color, 0.8);
+                        }
+                        &.btn-cart {
+                            background-color: #909090;
+                            border-color: #909090;
+                            &:hover {
+                                @include background-opacity(#909090, 0.8);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .widget_searchform_content {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 100%;
+            form {
+                position: relative;
+                padding: 35px 60px;
+                border: 1px solid rgba(255,255,255,0.3);
+				background: rgba(255, 255, 255, 0.3);
+                input {
+                    display: block;
+                    height: 40px;
+                    line-height: 40px;
+                    padding: 0;
+                    color: #FFF;
+                    &[type="text"] {
+                        font-size: 18px;
+                        color: #000;
+                        background-color: #fff;
+                        border: none;
+                        padding: 0 15px;
+                        &:focus {
+                            background-color: #fff;
+                            border: none;
+                        }
+                    }
+                    &[type="submit"] {
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        padding: 0 50px;
+                        position: absolute;
+                        right: 40px;
+                        top: 35px;
+                        background-color: $primary_color;
+                        @media screen and (max-width: 768px) {
+                            padding: 0 15px;
+                        }
+                    }
+                }
+            }
+        }		
+    }
+}
+.header-style02{
+    @include breakpoint-min(992px){
+        position: relative !important;
+        &:before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0;
+            border-bottom: 1px solid #EFEFEF;
+            bottom: 55px;
+            left: auto;
+        }
+    }
+    .zo-header-main{
+        .header-top-contact{
+            margin: 0;
+            padding: 0;
+            li{
+                list-style-type: none;
+                display: inline-block;
+                font-weight: 400;
+                margin-right: 15px;
+                i{
+                    color: $primary-color;
+                }
+            }
+        }
+        .header-top-navigation{
+            li{
+                list-style-type: none;
+                display: inline-block;
+                padding: 0 10px;
+            }
+        }
+        .header-top-social{
+            margin: 0px;
+            padding: 0px;
+            li{
+                list-style: none;
+                display: inline-block;
+                width: 45px;
+                text-align: center;
+                &:hover {
+                    i {
+                        @include animation(0.3s ease 0s normal forwards 1 running toTopFromBottom);
+                    }
+                }
+                &.facebook:hover {
+                    background: #5d82d1;
+                }
+                &.twitter:hover {
+                    background: #40bff5;
+                }
+                &.google:hover {
+                    background: #eb5e4c;
+                }
+                &.pinterest:hover {
+                    background: #e13138;
+                }
+                &.vimeo:hover {
+                    background: #35c6ea;
+                }
+                &.linkedin:hover {
+                    background: #238cc8;
+                }
+                &.dribbble:hover {
+                    background: #f7659c;
+                }
+                &.youtube:hover {
+                    background: #ef4e41;
+                }
+                &.rss:hover {
+                    background: #faa33d;
+                }
+                a {
+                    font-size: 15px;
+                    line-height: 45px;
+                    display: block;
+                    color:#fff;
+                }
+            }
+        }
+    }
+    .zo-header-style02-menu{
+        border-top: 1px solid #F2F2F2;
+    }
+    .zo-header-menu{
+        position: relative;
+		@include breakpoint-min(992px) {
+			float: left;
+			width: 100%;
+		}
+        .zo-header-navigation-left{
+            display: block;
+            float: left;
+            margin-left: 15px;
+            .zo-header-navigation .nav-menu > li > a {
+                line-height: 50px !important;
+            }
+        }
+        .zo-header-navigation-right{
+            display: block;
+            float: right;
+            margin-right: 15px;
+            line-height: 50px !important;
+        }
+    }
+	
+	@include breakpoint-max(992px) {
+		.zo-header-secondary, .zo-header-style02-menu {
+			display: inline-block;
+			float: right;
+		}
+		.zo-header-menu {
+			position: static;
+		}
+		&#zo-header .zo-header-main .zo-header-navigation-right {
+			float: none;
+			margin-right: 0;
+		}
+	}
+}

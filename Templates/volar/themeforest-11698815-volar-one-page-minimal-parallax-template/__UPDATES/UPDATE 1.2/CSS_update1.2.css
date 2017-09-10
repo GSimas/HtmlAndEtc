@@ -1,0 +1,234 @@
+/* 
+	=========================================================================
+	=========================================================================
+
+	Volar Template  ----////----  CSS  Update 1.2  ----/////----  2015-07-27
+	
+	=========================================================================
+	=========================================================================
+*/
+/*
+  ========================================
+    Navbar Large Logo Support
+  ========================================
+*/
+.navbar-collapse, .navbar-header, .navbar-brand {
+	position: relative;
+}
+.navbar-logo {
+    padding: 15px 0;
+}
+.navbar-brand p {
+    padding: 15px 0 15px 10px;
+    /*The line-height here and your logo height should be the same, so type the height of your logo in front of line-height below */
+    line-height: 30px;
+}
+.navbar-toggle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 24px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.navbar-nav {
+    width: 100%;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-nav {
+        width: auto;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
+
+
+/*=============================================
+=             Background Slideshow            =
+=============================================*/
+.bg-slideshow-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.bg-slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  /*animation*/
+  -webkit-animation: slideShow 24s linear infinite 0s;
+          animation: slideShow 24s linear infinite 0s;
+}
+.bg-slide-1 {
+  opacity: 1;
+}
+.bg-slide-2 {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+.bg-slide-3 {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+/*keyframes*/
+@-webkit-keyframes slideShow {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);;
+            transform: scale3d(1, 1, 1);;
+  }
+  5% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  41% {
+    opacity: 0;
+    -webkit-transform: scale3d(1.3, 1.3, 1);
+            transform: scale3d(1.3, 1.3, 1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);;
+            transform: scale3d(1, 1, 1);;
+  }
+}
+@keyframes slideShow {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);;
+            transform: scale3d(1, 1, 1);;
+  }
+  5% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  41% {
+    opacity: 0;
+    -webkit-transform: scale3d(1.3, 1.3, 1);
+            transform: scale3d(1.3, 1.3, 1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);;
+            transform: scale3d(1, 1, 1);;
+  }
+}
+/* 
+ Home section SlideShow Backgrounds
+ -------------------------
+ */
+.bg-slide-1 {
+  opacity: 1;
+  background: url(../img/backgrounds/home-background-01.jpg) no-repeat center center;
+  background-size: cover;
+}
+.bg-slide-2 {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  background: url(../img/backgrounds/home-background-02.jpg) no-repeat center center;
+  background-size: cover;
+}
+.bg-slide-3 {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+  background: url(../img/backgrounds/home-background-03.jpg) no-repeat center center;
+  background-size: cover;
+}
+.retina-support .bg-slide-1 {
+  background-image: url("../img/backgrounds/home-background-01.jpg");
+}
+@media only screen and (min-device-width: 320px) {
+  .retina-support .bg-slide-1 {
+    background-image: url("../img/backgrounds/home-background-01.jpg");
+  }
+}
+@media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2.4), (min--moz-device-pixel-ratio: 2.4), (-webkit-min-device-pixel-ratio: 2.4), (min-resolution: 2.4dppx) {
+  .retina-support .bg-slide-1 {
+    background-image: url("../img/backgrounds/home-background-01@2x.jpg");
+  }
+}
+@media only screen and (min-device-width: 1200px) {
+  .retina-support .bg-slide-1 {
+    background-image: url("../img/backgrounds/home-background-01@lg.jpg");
+  }
+}
+@media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .retina-support .bg-slide-1 {
+    background-image: url("../img/backgrounds/home-background-01@lg2x.jpg");
+  }
+}
+.retina-support .bg-slide-2 {
+  background-image: url("../img/backgrounds/home-background-02.jpg");
+}
+@media only screen and (min-device-width: 320px) {
+  .retina-support .bg-slide-2 {
+    background-image: url("../img/backgrounds/home-background-02.jpg");
+  }
+}
+@media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2.4), (min--moz-device-pixel-ratio: 2.4), (-webkit-min-device-pixel-ratio: 2.4), (min-resolution: 2.4dppx) {
+  .retina-support .bg-slide-2 {
+    background-image: url("../img/backgrounds/home-background-02@2x.jpg");
+  }
+}
+@media only screen and (min-device-width: 1200px) {
+  .retina-support .bg-slide-2 {
+    background-image: url("../img/backgrounds/home-background-02@lg.jpg");
+  }
+}
+@media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .retina-support .bg-slide-2 {
+    background-image: url("../img/backgrounds/home-background-02@lg2x.jpg");
+  }
+}
+.retina-support .bg-slide-3 {
+  background-image: url("../img/backgrounds/home-background-03.jpg");
+}
+@media only screen and (min-device-width: 320px) {
+  .retina-support .bg-slide-3 {
+    background-image: url("../img/backgrounds/home-background-03.jpg");
+  }
+}
+@media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2.4), (min--moz-device-pixel-ratio: 2.4), (-webkit-min-device-pixel-ratio: 2.4), (min-resolution: 2.4dppx) {
+  .retina-support .bg-slide-3 {
+    background-image: url("../img/backgrounds/home-background-03@2x.jpg");
+  }
+}
+@media only screen and (min-device-width: 1200px) {
+  .retina-support .bg-slide-3 {
+    background-image: url("../img/backgrounds/home-background-03@lg.jpg");
+  }
+}
+@media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .retina-support .bg-slide-3 {
+    background-image: url("../img/backgrounds/home-background-03@lg2x.jpg");
+  }
+}
+
+/*=============================================
+=        Solving little issue in Firefox      =
+=============================================*/
+
+.portfolio-filters .btn::before,
+.portfolio-filters .btn::after {
+  height: 49%;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .portfolio-filters .btn::before,
+  .portfolio-filters .btn::after {
+    height: 50%;
+  }
+}

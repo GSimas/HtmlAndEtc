@@ -1,0 +1,265 @@
+/* 
+ *	Menu General All Screen 
+ */
+.nav-menu * {
+	/* Effect for all element in main menu */
+	@include transition(all .3s ease);
+}
+.nav-menu {
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	display: inline-block;
+	width: 100%;
+	li {
+		display: inline-block;
+		position: relative;
+		list-style: none;
+		a {
+			display: inline-block;
+			position: relative;
+			white-space: nowrap;
+		}
+	}
+}
+
+/*
+ *  Main Menu For Screen Large ( > 992px ).
+ */
+@include breakpoint-min(992px) {
+	.nav-menu {
+		/* First Level */
+		> li {	
+		
+			/* Hover - First Level */
+			&:hover {
+				> ul.sub-menu {
+					overflow: visible;
+					visibility: visible;
+					margin-top: 0;
+					@include transform(scaleY(1));
+				}
+			}
+			
+			/* Style Sub Menu - Level 2 */
+			ul.sub-menu {
+				position: absolute;
+				left: 0;
+				top: 100%;
+				min-width: 200px;
+				z-index: 29;
+				padding: 0;
+				margin-top: -10px;
+				background-color: #fff;
+				visibility: hidden;
+				overflow: hidden;
+				@include transform(scaleY(0));
+				@include transform-origin(0 0);
+				@include border-radius(2px);
+				li{ 
+					width: 100%;
+					&:hover {
+						> ul.sub-menu {
+							overflow: visible;
+							visibility: visible;
+							margin-top: 0;
+							@include transform(scaleY(1));
+						}
+					}
+					a{
+						display: block;
+						line-height: 38px;
+						padding-left: 15px;
+						padding-right: 15px;
+						border-bottom: 1px solid #eae9e9;
+					}
+					
+					/* Menu - Level > 3 */
+					ul.sub-menu {
+						top: 0;
+						left: 100%;
+						/* Menu Stick Wall */
+						&.back {
+							right: 100%;
+							left: auto;
+							ul:not(.back) {
+								right: 100%;
+								left: auto;
+							}
+							ul.back {
+								left: 100%;
+								right: auto;
+								ul:not(.back) {
+									left: 100%;
+									right: auto;
+								}
+								ul.back {
+									right: 100%;
+									left: auto;
+								}
+							}
+						}
+					}
+					.zo-menu-toggle {
+						position: absolute;
+						right: 15px;
+						top: 50%;
+						@include transform(translateY(-50%));
+					}
+				}
+			}
+		}
+		
+		/* Start Mega Menu */
+		> li.menu-item-has-children {
+			&.has_full_width {
+				position: inherit;
+				> ul {
+					left: 0 !important;
+					width: 100% !important;
+				}
+			}
+			.columns2 > li:nth-of-type(2n+1),
+			.columns3 > li:nth-child(3n+1),
+			.columns4 > li:nth-child(4n+1),
+			.columns5 > li:nth-child(5n+1) {
+				clear:left;
+			}
+			.columns5 > li{
+				width:20% !important;
+			}
+			.columns4 > li{
+				width:25% !important;
+			}
+			.columns3 > li{
+				width:33% !important;
+			}
+			.columns2 > li{
+				width:50% !important;
+			}
+			[class*="columns"]  > li {
+				float: left;
+				> a {
+					width: 100%;
+				}
+			}
+			> ul.multicolumn, > ul.drop_full_width {
+				.zo-menu-toggle {
+					display: none;
+				}
+				ul.sub-menu {
+					position: static;
+					margin-top: 0;
+					max-height: 1000px;
+					overflow: visible;
+					padding-left: 15px;
+				}
+			}
+		}
+		/* End Mega Menu */
+	}
+	#zo-menu-mobile.collapse {
+        display: none;
+    }
+}
+/*
+ *  End Main Menu For Screen Large ( > 992px ).
+ */
+
+
+
+
+/*
+ *  Max width of 992 pixels - Menu Mobi
+ */
+@include breakpoint-max(992px) {
+	.zo-header-navigation.collapse {
+		display: block;
+		background: #222;
+	}
+    .zo-header-navigation {
+		display: none;
+        background: #fff;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+		left: 0;
+		z-index: 99;
+    }
+    #zo-menu-mobile {
+        display: block;
+        i {
+            background: $primary_color;
+            color: #fff;
+            cursor: pointer;
+            font-size: 20px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            width: 40px;
+            &:hover {
+                background: #333;
+            }
+        }
+    }
+	
+	/* First Level - Menu Mobi */
+    ul.nav-menu > li {
+		display: block;
+		padding-left: 15px;
+		&.current-menu-parent , &.current_page_ancestor {
+			a {border-bottom: none;}
+		}
+		a {
+			height: inherit;
+			line-height: inherit;
+			color: #999 ;
+			line-height: 50px !important;
+        }
+        .zo-menu-toggle {
+            cursor: pointer;
+            position: absolute;
+            right: 5px;
+            text-align: center;
+            top: 5px;
+            width: 30px;
+			color: #999 ;
+	    }
+		/* Sub Level - Menu Mobi */
+        ul.sub-menu {
+            max-height: 0;
+            overflow: hidden;
+            padding-left: 10px;
+			width: 100% !important;
+			li{
+				display: block;
+				background: transparent;
+				&.current_page_item ,&.current-menu-ancestor,&:hover {
+					a {
+						background: transparent;
+						border-bottom:none;
+						color: $primary_color;
+					}
+				}
+				a{
+					color: #999;
+				}
+			}
+            &.submenu-open {
+                max-height: 1000px;
+                + .zo-menu-toggle i {
+                    &:before {
+                        content: "\f106";
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+ *  End Max width of 992 pixels - Menu Mobi
+ */
+
+/* ==========================================================================
+  End Style Main Menu
+========================================================================== */

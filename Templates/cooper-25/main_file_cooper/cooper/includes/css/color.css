@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*--
+	Color styles
+--*/
+header li.act-link a , .text-title span , .dec-list li:before  , .resum-header i , .sl-tabs li i , .testimonials-slider ul.star-rating li , .to-top-wrap i ,.scroll-nav a.external:after , .mail-link:hover  , .price  , .fixed-filter .gallery-filters a.gallery-filter-active , .slider-zoom , .page-nav a span , .post-meta li i , .post-author-wrap li a , .controls button , .sliding-menu a:hover{
+	color:#ffc815;
+}
+header.sticky  li.act-link a , .footer-social li a  ,   .share-icon , .fixed-icons-wrap ul li a  , .bold-separator , .fixed-column , .btn , .scroll-nav li a.act-link:before  , .scroll-nav li a.act-link:after  , .custom-skillbar , .price:before , .color-bg , ul.tabs li.current .tb-item , .testimonials-slider-holder .customNavigation a  , .accordion-title.activeac  h5 a , .resum-header:before  , .menu-inner:before , .customNavigation.gals a , .bold-title:before , .progress-bar  , #submit , .grid-det h3:before , .inline-filter .gallery-filters a.gallery-filter-active , .box-item.vis-det a , .inline-filter .folio-counter , .fixed-filter .folio-counter , .box-item.hd-box .image-popup , .post-tags li a:hover , .pagination a.current-page , .pagination a:hover , .carousel-item h3:before   , .box-item.vis-det a.popgal , .show-share:before{
+	background:#ffc815;
+ 
+}
+.loader {
+	border-top: 10px solid  #ffc815;
+	border-right: 10px solid #ffc815;
+	border-bottom: 10px solid #ffc815;
+}
+.hd-box-wrap h2:after{
+	border-color: transparent #ffc815 transparent transparent;
+}

@@ -1,0 +1,385 @@
+/* 0.0 - Reset by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-spacing: 0;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearboth {
+	clear: both;
+}
+
+/* 1.0 - Body */
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #1c1c1c;
+	font-size: 15px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {   
+    border-radius: 5px;
+	background-color: #e0e0e0; 	
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+	background-color: #FFC815;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+/* 2.0 - Header Structure */
+#header {
+	width: 100%;
+	border-bottom: #FFC815 3px solid;
+	padding: 30px 0;
+	margin: 0 0 50px 0;
+	background: #191919;
+	color:#FFC815;
+}
+
+#title, #tagline {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#title {
+	margin: 0 auto 10px auto;
+}
+
+#title img{
+	padding-bottom: 10px;
+}
+
+#title span {
+	font-weight: 400;
+}
+
+#tagline {
+	color: #CDCDCD;
+	font-size: 14px;
+}
+
+#tagline a {
+	color: #CDCDCD;
+	text-decoration: none;
+}
+
+/* 3.0 - Body Structure */
+#content {
+	width: 960px;
+	margin: 0 auto;
+	border-bottom: 3px #FFC815 solid;
+    border-radius: 3px;
+}
+
+#content-inner {
+	width: 780px;
+	margin: 0 auto;
+	border-bottom: 3px #FFC815 solid;
+    border-radius: 3px;
+}
+
+#content-inner img.screencap {
+	max-width: 670px;
+	padding: 20px;
+}
+
+#content-inner .nested-list img.screencap {
+	max-width: 610px;
+}
+
+.shortcode-image {
+	border: #1c1c1c 4px solid;
+}
+
+.margin-above {
+	margin: 20px 0 0;
+}
+
+/* 3.1 - Columns */
+.one-third {
+	width: 20%;
+	float: left;
+	margin: 0 3% 0 0;
+}
+
+.two-thirds {
+	width: 58%;
+	float: left;
+	margin: 0 3% 0 0;
+}
+
+.last {
+	margin: 0;
+}
+
+/* 3.2 - Spacing */
+.space1 {
+	margin: 0 0 80px 0;
+	border: none;
+}
+
+.space2 {
+	margin: 0 0 60px 0;
+	border: none;
+}
+
+.space3 {
+	margin: 0 0 30px 0;
+	border: none;
+}
+
+.space4 {
+	margin: 0 0 10px 0;
+	border: none;
+}
+
+.space5 {
+	margin: 20px 0;
+}
+
+.space5-above {
+	margin: 20px 0 0 0;
+}
+
+/* 4.0 - Typography */
+
+/* 4.1 - Header */
+h1 {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 120%;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+h6 {
+	font-size: 12px;
+}
+
+i,em {
+	font-style: italic;
+}
+
+.title1 {
+	position: relative;
+	margin: 0 0 50px 0;
+}
+
+.title2 {
+	margin: 0 0 40px 0;
+}
+
+.title-block {
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	width: 150px;
+	height: 3px;
+	background: #1c1c1c;
+}
+
+/* 4.2 - Paragraph */
+p {
+	line-height: 160%;
+	margin: 0 0 20px 0;
+}
+
+a {
+	color: #bf9958;
+}
+
+/* 4.3 - Code */
+pre {
+    background: url(images/pre.png);
+    border-left: #1c1c1c 4px solid;
+    font-family: Consolas,"Andale Mono",Courier,"Courier New",monospace;
+    font-size: 12px;
+    line-height: 155%;
+    margin: 0 0 30px;
+    padding: 20px;
+    white-space: pre-wrap;
+}
+
+/* 4.4 - Lists */
+ol {
+	margin: 0 0 0 60px;
+}
+
+ol ol {
+	margin: 0 0 0 60px;
+}
+
+ol li {
+	list-style: decimal;
+	border-bottom: #e3e3e3 1px solid;
+	line-height: 160%;
+	padding: 0 0 20px 0;
+	margin: 20px 0 0 0;
+}
+
+ol li:last-child {
+	border-bottom: none;
+}
+
+ol li ol li:last-child {
+	margin: 20px 0 30px 0;
+	border-bottom: #e3e3e3 1px solid;
+}
+
+ol li ol li {
+	list-style: lower-roman;
+}
+
+.nested-list {
+	border-bottom: none;
+}
+
+li span,
+p span {
+	background: #bf9958;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 4px 8px;
+	border-radius: 4px;
+	white-space: nowrap;
+}
+
+.contents li {
+	list-style: none;
+	border-bottom: #e3e3e3 1px solid;
+	padding: 0 0 15px 0;
+	margin: 0 0 15px 0;
+	font-size: 16px;
+}
+
+.contents li a {
+	color: #1c1c1c;
+	text-decoration: none;
+}
+
+.msg {
+	background: #f6f6f6;
+	padding: 10px;
+}
+
+.msg p {
+	margin: 0;
+	font-style: italic;
+}
+
+/* 4.5 - Tables */
+
+table {
+	background-color: #e7e7e7;
+	margin: 20px 0;
+}
+
+td {
+	padding: 5px 20px;
+	font-size: 14px;
+	border-bottom: 1px solid #ccc;
+}
+
+td.sub {
+	background-color: #fff;
+}
+
+thead td {
+	font-weight: bold;
+	background-color: #fff;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #ddd;
+}
+
+code {
+	font-family: monospace;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}

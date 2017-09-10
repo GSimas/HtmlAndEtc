@@ -1,0 +1,45 @@
+/*
+
+IF you came across an issue like unwanted gap or collapsing between
+filter buttons in irefox THEN add ONE OF theese styles to the end of
+/css/styles.css. one of them should work for you.
+
+Thank You.
+
+*/
+
+/*This*/
+
+@media screen and (min-width: 768px) {
+	.portfolio-filters .btn::before,
+	.portfolio-filters .btn::after {
+		height: 49%;
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+	.portfolio-filters .btn::before,
+	.portfolio-filters .btn::after {
+		height: 50%;
+	}
+}
+
+/*Or This*/
+
+.portfolio-filters .btn::before,
+.portfolio-filters .btn::after {
+	height: 49%;
+}
+
+@media screen and (min-width: 768px) {
+	.portfolio-filters .btn::before,
+	.portfolio-filters .btn::after {
+		height: 50%;
+	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+	.portfolio-filters .btn::before,
+	.portfolio-filters .btn::after {
+		height: 50%;
+	}
+}

@@ -1,0 +1,56 @@
+
+/*
+  ========================================
+               Home Section Text Mask
+  ========================================
+*/
+.text-mask-light {
+  position: relative;
+}
+.text-mask-light .cd-headline {
+  position: absolute;
+  width: 100vw;
+  height: 110vh;
+  top: -50vh;
+  left: -50vw;
+  margin: 0;
+  background-image: url(../img/backgrounds/home-background-01.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  text-align: center;
+}
+.retina-support .text-mask-light .cd-headline {
+  background-image: url("../img/backgrounds/home-background-01.jpg");
+}
+@media only screen and (min-device-width: 320px) {
+  .retina-support .text-mask-light .cd-headline {
+    background-image: url("../img/backgrounds/home-background-01.jpg");
+  }
+}
+@media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2.4), (min--moz-device-pixel-ratio: 2.4), (-webkit-min-device-pixel-ratio: 2.4), (min-resolution: 2.4dppx) {
+  .retina-support .text-mask-light .cd-headline {
+    background-image: url("../img/backgrounds/home-background-01@2x.jpg");
+  }
+}
+@media only screen and (min-device-width: 1200px) {
+  .retina-support .text-mask-light .cd-headline {
+    background-image: url("../img/backgrounds/home-background-01@lg.jpg");
+  }
+}
+@media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .retina-support .text-mask-light .cd-headline {
+    background-image: url("../img/backgrounds/home-background-01@lg2x.jpg");
+  }
+}
+.text-mask {
+  margin-top: calc(50vh - 23px);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 700px;
+  background: #fff;
+  color: #000;
+  mix-blend-mode: lighten;
+}
+.text-mask b {
+  margin-left: .1em;
+}

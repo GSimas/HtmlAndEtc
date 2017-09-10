@@ -1,0 +1,105 @@
+.zo-mega-menu-wrapper{
+	> ul{
+		padding: 0;
+		margin: 0;
+		/*1st level*/
+		> li{
+			position: relative;
+			display: inline-block;
+			&.zo-mega-menu{
+				> ul{
+					/*Should be remove*/
+					background-color: #404040;
+					padding: 15px;
+					width: 500px;
+					right: 0;
+					/***/
+					-webkit-box-sizing: border-box;
+     				-moz-box-sizing: border-box;
+          			box-sizing: border-box;
+					&:before{
+						display: table;
+						content: "";
+					}
+					&:atfer{
+						display: table;
+						content: "";
+						clear: both;
+					}
+					> li{
+						float: left;
+						position: relative;
+						min-height: 1px;
+						list-style: none;
+						&.zo-col-1{
+							width: 8.33333333%;
+						}
+						&.zo-col-2{
+							width: 16.66666667%;
+						}
+						&.zo-col-3{
+							width: 25%;
+						}
+						&.zo-col-4{
+							width: 33.33333333%;
+						}
+						&.zo-col-5{
+							width: 41.66666667%;
+						}
+						&.zo-col-6{
+							width: 50%;
+						}
+						&.zo-col-7{
+							width: 58.33333333%;
+						}
+						&.zo-col-8{
+							width: 66.66666667%;
+						}
+						&.zo-col-9{
+							width: 75%;
+						}
+						&.zo-col-10{
+							width: 83.33333333%;
+						}
+						&.zo-col-11{
+							width: 91.66666667%;
+						}
+						&.zo-col-12{
+							width: 100%;
+						}
+						>ul{
+							background: transparent !important;
+							position: relative;
+							display: block;
+							>li{
+								position: relative;
+								ul{
+									position: absolute;
+									display: none;
+								}
+								&:hover{
+									>ul{
+										display: block;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			ul{
+				background: #fff;
+				position: absolute;
+				display: none;
+			}
+		}
+		li:hover{
+			>ul{
+				display: block;
+			}
+		}
+		>li>ul{
+			left: 0;
+		}
+	}
+}
