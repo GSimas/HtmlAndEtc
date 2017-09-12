@@ -13,9 +13,24 @@ Desenvolvido com [Microsoft Visual Studio Code](https://code.visualstudio.com).
 - [Flexslider](https://woocommerce.com/flexslider/)
 - [Materialize CSS](http://materializecss.com/)
 
+**Templates/Temas Exemplo:**
+
+- 3D Printing (Responsive Elegant 3D Print Scan)
+- Sample Resumé Template
+- Bionick 30
+- Verb
+- Volar
+- Timelines
+
 Você pode acessar a página em progresso e testes neste link a seguir: [Página HtmlAndEtc](https://gsimas.github.io/HtmlAndEtc)
 
 ![](http://www.planetsourcecode.com/vb/2010Redesign/images/LangugeHomePages/HTML5_CSS_JavaScript.png)
+
+**Referência:**
+
+- [ThemeForest](https://themeforest.net/)
+- [Marksheet](http://marksheet.io/)
+- [W3Schools](https://www.w3schools.com/)
 
 ## Previous README.md file was like that:
 
