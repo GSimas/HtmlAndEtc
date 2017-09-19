@@ -1,0 +1,115 @@
+
+
+@import url(http://fonts.googleapis.com/css?family=Hind:300,500);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic);
+
+                    /*-------------------
+                        General Rulas
+                      -------------------*/
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #343333;
+}
+
+html,
+body,
+textarea,
+button,
+input {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Hind', sans-serif;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 63px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+h2.small-heading {
+    padding: 60px 0 20px 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header h2 {
+    margin: 0;
+    margin-left: 50px;
+    float: left;
+}
+
+.header h3 {
+    margin: 10px 50px 0 0;
+    float: right;
+}
+
+.nav li a {
+    font-weight: bold;
+    color: #343333;
+}
+
+.sec {
+    padding: 0 15px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.sec h2 {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.data {
+    position: relative;
+    left: 25%;
+}
+
+.affix {
+    top: 100px;
+}
+
+.some-features {
+    list-style-type: square;
+}
+
+.some-features li {
+    margin-bottom: 12px;
+}
+
+.some-features li a {
+    font-weight: bold;
+}
+
+.some-features li a:hover {
+    color: #343333;
+}
