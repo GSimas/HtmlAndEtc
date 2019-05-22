@@ -1,0 +1,63 @@
+/*------------------------------------------------------------------
+Common Stylesheet
+
+Project:   Dope - Multipurpose Bootstrap4 Template
+Build:     Bootstrap 4 +
+Author:    F4H3M
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.  Common Styles
+	1.1	Variables
+	1.2	Mixins
+	1.3	Flexbox
+	1.4	Reset
+2.  Elements
+3.  Menu 
+4.  Hero
+5.  Home
+6.  Price
+7.  Points
+8.  Feature
+9.  Brands
+10. Review
+11. Execution
+12. Accordian
+13. Carusel
+14. Request Demo
+15. Blog
+16. Contact
+17. Footer
+
+-------------------------------------------------------------------*/
+
+// including variables and mixins
+@import "variables";
+@import "mixins";
+
+// including reset styles
+@import "reset";
+
+
+// including custom styles
+@import "common";
+@import "preloader";
+@import "menu";
+@import "banner";
+@import "features";
+@import "about";
+@import "testimonial";
+@import "portfolio";
+@import "blog";
+@import "team";
+@import "accordian";
+@import "cta";
+@import "price";
+@import "download";
+@import "clients";
+@import "stat";
+@import "contact";
+@import "footer";
